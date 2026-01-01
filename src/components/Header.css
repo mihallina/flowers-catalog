@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+.Header{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    background-color: var(--bg-green);
+    padding: 15px 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 50px;
+    font-family: "Fleur De Leah", cursive;
+    line-height: 38px;
+    color: var(--border-green)
+}
+
+.search-inp{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-green);
+}
+
+.header-imgs img{
+    width: 35px;
+    color: var(--border-green);
+}
+
+.header-imgs{
+    display: flex;
+    gap: 15px;
+}
