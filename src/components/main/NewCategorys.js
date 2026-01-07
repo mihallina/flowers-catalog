@@ -1,6 +1,6 @@
 //содержит 3 категории новинки
 import React from "react";
-import { useAppSelector } from "../redux/hooks";
+import { useAppSelector } from "../../redux/hooks";
 import NewCategory from "./NewCategory";
 import "./NewCategorys.css";
 
@@ -13,7 +13,11 @@ const NewCategorys = () => {
   );
 
   if (status !== "succeeded") {
-    return <div>Закгрузка новинок...</div>;
+    return (
+      <div className="container">
+        <div>Закгрузка новинок...</div>
+      </div>
+    );
   }
 
   const topCategories = categories.slice(0, 3);
@@ -24,13 +28,20 @@ const NewCategorys = () => {
       id: category.id,
       name: category.name,
       image: firstProduct ? firstProduct.image : placeholder,
+      categoryId: category.id,
+      slug: category.slug,
     };
   });
 
   return (
     <div className="container newCategorys">
       {categoryData.map((item) => (
-        <NewCategory key={item.id} url={item.image} text={item.name} />
+        <NewCategory
+          key={item.id}
+          url={item.image}
+          text={item.name}
+          slug={item.slug}
+        />
       ))}
     </div>
   );

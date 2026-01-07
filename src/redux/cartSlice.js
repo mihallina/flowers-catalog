@@ -1,47 +1,70 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {
+  fetchCart,
+  addToCart,
+  updateCartItem,
+  removeCartItem,
+} from "./cartActions";
+import { act } from "react";
 
-const initialState = [];
+const initialState = {
+  items: [],
+  status: "idle",
+  error: null,
+};
 
 const cartSlice = createSlice({
-    name: 'cart',
-    initialState,
-    reducers: {
-        addToCart: (state, action) => {
-            const {productId, quantity = 1} = action.payload;
-            const existingItem = state.find(item => item.productId === productId);
-            
-            if(existingItem){
-                existingItem.quantity += quantity;
-            } else {
-                state.push({
-                    id: Date.now(),
-                    productId,
-                    quantity,
-                });
-            }
-        },
-        updateQuantity: (state, action) => {
-            const {productId, quantity} = action.payload;
-            const item = state.find(item => item.productId === productId);
-            if(item && quantity > 0){
-                item.quantity = quantity;
-            } else if (item && quantity <= 0) {
-                return state.filter(item => item.productId !== productId);
-            }
-        },
-        removeFromCart: (state, action) => {
-            const productId = action.payload;
-            return state.filter(item => item.productId !== productId);
-        },
-        clearCart: () => [],
-    }
-})
+  name: "cart",
+  initialState,
+  reducers: {
+    clearCart: (state) => {
+      state.items = [];
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCart.pending, (state) => {
+        state.status = "loading";
+        state.error = null;
+      })
+      .addCase(fetchCart.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.items = action.payload;
+        state.error = null;
+      })
+      .addCase(fetchCart.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload || action.error.message;
+      })
 
-export const {
-    addToCart,
-    updateQuantity,
-    removeFromCart,
-    clearCart,
-} = cartSlice.actions;
+      .addCase(addToCart.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(addToCart.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.items.push(action.payload);
+      })
+      .addCase(addToCart.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload || action.error.message;
+      })
+
+      .addCase(updateCartItem.fulfilled, (state, action) => {
+        const index = state.items.findIndex(
+          (item) => item.id === action.payload.id
+        );
+        if (index !== -1) {
+          state.items[index] = action.payload;
+        }
+      })
+      .addCase(removeCartItem.fulfilled, (state, action) => {
+        state.items = state.items.filter(
+          (item) => item.id !== action.payload
+        );
+      });
+  },
+});
+
+export const { clearCart } = cartSlice.actions;
 
 export default cartSlice.reducer;

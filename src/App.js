@@ -1,11 +1,13 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import {PagesRouter} from './routes/PagesRouter'
+import { PagesRouter } from "./routes/PagesRouter";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
-        <PagesRouter />
+      <ScrollToTop />
+      <PagesRouter />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,25 @@
+.popularCard{
+    color: var(--border-green);
+    text-decoration: none;
+}
+
+.popularCard-img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.popularCard-name{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.popularCard:hover .popularCard-name{
+    color: var(--border-green-hover)
+}
+
+.popularCard:hover .popularCard-img {
+    transform: scale(0.95);
+}

@@ -1,0 +1,129 @@
+.cart {
+    margin-top: 100px;
+    color: var(--border-green)
+}
+
+.cart-empty {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--border-green)
+}
+
+.cart-empty img {
+    width: 300px;
+}
+
+.cart-empty h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+
+}
+
+.cart-empty-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--border-green);
+    color: var(--bg-orange);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.cart-empty-btn:hover{
+    background-color: var(--border-green-hover);
+}
+
+.cart-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+    margin-bottom: 50px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--bg-green)
+}
+
+.cart-item-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    background: var(--bg-green);
+    border: 1px solid var(--border-green);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quantity-value {
+    min-width: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.remove-btn {
+    width: 35px;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    background-color: var(--bg-green);
+}
+
+.remove-btn img{
+    width: 100%;
+}
+
+.cart-total {
+    background-color: var(--bg-green);
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    height: max-content;
+}
+
+.cart-order-btn{
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: var(--border-green);
+    color: var(--bg-orange);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

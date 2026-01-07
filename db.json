@@ -1,246 +1,1807 @@
 {
   "categories": [
-    { "id": 1, "name": "Японские розы", "slug": "japanese-roses" },
-    { "id": 2, "name": "Семена овощей", "slug": "vegetable-seeds" },
-    { "id": 3, "name": "Гортензии", "slug": "hydrangeas" },
-    { "id": 4, "name": "Луковичные и клубневые", "slug": "bulbs" },
-    { "id": 5, "name": "Садовые розы", "slug": "garden-roses" },
-    { "id": 6, "name": "Декоративные кустарники", "slug": "shrubs" },
-    { "id": 7, "name": "Яркие многолетники", "slug": "perennials" },
-    { "id": 8, "name": "Хвойные растения", "slug": "conifers" },
-    { "id": 9, "name": "Биопрепараты", "slug": "bio-products" },
-    { "id": 10, "name": "Гофрированные гладиолусы", "slug": "ruffled-gladiolus" },
-    { "id": 11, "name": "Плодово-ягодные", "slug": "berries" },
-    { "id": 12, "name": "Клематисы, лианы", "slug": "clematis" }
+    {
+      "id": "1",
+      "name": "Японские розы",
+      "slug": "japanese-roses",
+      "descr": "Утончённые, изысканные сорта с нежным ароматом и махровыми цветками, вдохновлённые традициями японского садоводства. Идеальны для романтичных композиций и срезки."
+    },
+    {
+      "id": "2",
+      "name": "Семена овощей",
+      "slug": "vegetable-seeds",
+      "descr": "Высококачественные семена проверенных сортов с отличной всхожестью и урожайностью — от томатов и перцев до редиса и зелени. Гарантия качества и поддержка на всех этапах выращивания."
+    },
+    {
+      "id": "3",
+      "name": "Гортензии",
+      "slug": "hydrangeas",
+      "descr": "Пышные соцветия, меняющие окраску в зависимости от кислотности почвы — от нежно-голубого до насыщенного розового. Морозостойкие и неприхотливые сорта для сада и контейнеров."
+    },
+    {
+      "id": "4",
+      "name": "Луковичные и клубневые",
+      "slug": "bulbs",
+      "descr": "Яркие весенние акценты: тюльпаны, гладиолусы, ирисы, анемоны и другие луковичные, которые дарят взрыв цвета при минимальном уходе. Посадите осенью — наслаждайтесь цветением весной и летом."
+    },
+    {
+      "id": "5",
+      "name": "Садовые розы",
+      "slug": "garden-roses",
+      "descr": "Классические и современные сорта для клумб, рабаток и живых изгородей — от миниатюрных «патио» до мощных шрабов. Устойчивые к болезням, с обильным и продолжительным цветением."
+    },
+    {
+      "id": "6",
+      "name": "Декоративные кустарники",
+      "slug": "shrubs",
+      "descr": "Структурные растения для оформления сада: вейгелы, лапчатки, пузыреплодники и гортензии с декоративной листвой. Создадут фон, разделят зоны и будут украшать участок с весны до поздней осени."
+    },
+    {
+      "id": "7",
+      "name": "Яркие многолетники",
+      "slug": "perennials",
+      "descr": "Неприхотливые «рабочие лошадки» сада: флоксы, лилейники, хосты, астры и астильбы. Цветут год за годом, не требуя ежегодной посадки, и формируют живописные миксбордеры."
+    },
+    {
+      "id": "8",
+      "name": "Хвойные растения",
+      "slug": "conifers",
+      "descr": "Вечнозелёные каркасные растения для круглогодичного оформления: туи, можжевельники, сосны и ели — от карликовых форм до высоких деревьев. Создадут уют, зонируют пространство и защитят от ветра."
+    },
+    {
+      "id": "9",
+      "name": "Биопрепараты",
+      "slug": "bio-products",
+      "descr": "Экологичная защита и подкормка на основе природных компонентов: стимуляторы роста, средства от вредителей и болезней, препараты для укрепления иммунитета растений. Безопасны для людей, животных и почвы."
+    },
+    {
+      "id": "10",
+      "name": "Гофрированные гладиолусы",
+      "slug": "ruffled-gladiolus",
+      "descr": "Экзотические сорта с волнистыми, бахромчатыми или махровыми цветками, напоминающими орхидеи. Яркие, высокие и ароматные — настоящие звёзды летних клумб и букетов."
+    },
+    {
+      "id": "11",
+      "name": "Плодово-ягодные",
+      "slug": "berries",
+      "descr": "Саженцы и рассада проверенных сортов: голубика, клюква, ежевика, жимолость — с высокой урожайностью и адаптацией к нашему климату. Сладкие ягоды прямо с грядки без химии."
+    },
+    {
+      "id": "12",
+      "name": "Клематисы",
+      "slug": "clematis",
+      "descr": "Вертикальное озеленение с эффектом: клематисы с крупными цветками, вьющиеся розы, жимолость и другие лианы для арок, шпалер и заборов. Оживят стены и создадут живые изгороди."
+    }
   ],
   "products": [
-    { "id": 1, "categoryId": 1, "name": "Роза Шахерезада", "price": "24.99", "height": 80, "image": "/images/rose-01.webp" },
-    { "id": 2, "categoryId": 1, "name": "Роза Психея", "price": "27.99", "height": 90, "image": "/images/rose-02.webp" },
-    { "id": 3, "categoryId": 1, "name": "Роза Корал Желе", "price": "25.99", "height": 86, "image": "/images/rose-03.webp" },
-    { "id": 4, "categoryId": 1, "name": "Роза Аои", "price": "24.00", "height": 78, "image": "/images/rose-04.webp" },
-    { "id": 5, "categoryId": 1, "name": "Роза Принцесса Каори", "price": "26.99", "height": 88, "image": "/images/rose-05.webp" },
-    { "id": 6, "categoryId": 1, "name": "Роза Микото", "price": "26.99", "height": 82, "image": "/images/rose-06.webp" },
-    { "id": 7, "categoryId": 1, "name": "Роза Либелула", "price": "27.99", "height": 92, "image": "/images/rose-07.webp" },
-    { "id": 8, "categoryId": 1, "name": "Роза Блю Мун Стоун", "price": "24.99", "height": 84, "image": "/images/rose-08.webp" },
-    { "id": 9, "categoryId": 1, "name": "Роза Принцесса Айко", "price": "25.99", "height": 80, "image": "/images/rose-09.webp" },
-    { "id": 10, "categoryId": 1, "name": "Роза Масора", "price": "24.99", "height": 86, "image": "/images/rose-10.webp" },
-    { "id": 11, "categoryId": 1, "name": "Роза Ча Ча", "price": "28.00", "height": 94, "image": "/images/rose-11.webp" },
-    { "id": 12, "categoryId": 1, "name": "Роза Вагулетта", "price": "24.99", "height": 78, "image": "/images/rose-12.webp" },
-    { "id": 13, "categoryId": 1, "name": "Роза Салон", "price": "27.99", "height": 90, "image": "/images/rose-13.webp" },
-    { "id": 14, "categoryId": 1, "name": "Роза Каната", "price": "26.00", "height": 82, "image": "/images/rose-14.webp" },
-    { "id": 15, "categoryId": 1, "name": "Роза Гео Лаоен", "price": "25.99", "height": 88, "image": "/images/rose-15.webp" },
-    { "id": 16, "categoryId": 1, "name": "Роза Йоли", "price": "24.99", "height": 80, "image": "/images/rose-16.webp" },
-    { "id": 17, "categoryId": 1, "name": "Роза Роял Палас", "price": "26.99", "height": 92, "image": "/images/rose-17.webp" },
-    { "id": 18, "categoryId": 1, "name": "Роза Рамукан", "price": "24.00", "height": 76, "image": "/images/rose-18.webp" },
-
-    { "id": 19, "categoryId": 2, "name": "Томат Зорка", "price": "0.89", "height": 110, "image": "/images/semena-01.webp" },
-    { "id": 20, "categoryId": 2, "name": "Перец сладкий Чырвоны Магнат", "price": "0.89", "height": 100, "image": "/images/semena-02.webp" },
-    { "id": 21, "categoryId": 2, "name": "Томат Беркут", "price": "0.89", "height": 105, "image": "/images/semena-03.webp" },
-    { "id": 22, "categoryId": 2, "name": "Томат Дивиденд", "price": "0.89", "height": 102, "image": "/images/semena-04.webp" },
-    { "id": 23, "categoryId": 2, "name": "Томат Ирма", "price": "0.89", "height": 98, "image": "/images/semena-05.webp" },
-    { "id": 24, "categoryId": 2, "name": "Томат Рэдгрант", "price": "0.89", "height": 108, "image": "/images/semena-06.webp" },
-    { "id": 25, "categoryId": 2, "name": "Томат Стрела", "price": "0.89", "height": 104, "image": "/images/semena-07.webp" },
-    { "id": 26, "categoryId": 2, "name": "Редис Квант", "price": "1.19", "height": 60, "image": "/images/semena-08.webp" },
-    { "id": 27, "categoryId": 2, "name": "Салат Листовой Отили", "price": "1.29", "height": 55, "image": "/images/semena-09.webp" },
-    { "id": 28, "categoryId": 2, "name": "Горох Олинда", "price": "1.29", "height": 120, "image": "/images/semena-10.webp" },
-    { "id": 29, "categoryId": 2, "name": "Горох Преладо", "price": "1.29", "height": 118, "image": "/images/semena-11.webp" },
-    { "id": 30, "categoryId": 2, "name": "Репа Петровска", "price": "1.29", "height": 62, "image": "/images/semena-12.webp" },
-    { "id": 31, "categoryId": 2, "name": "Лук репчатый Вольски", "price": "1.29", "height": 58, "image": "/images/semena-13.webp" },
-    { "id": 32, "categoryId": 2, "name": "Салат листовой Энтони", "price": "1.29", "height": 56, "image": "/images/semena-14.webp" },
-    { "id": 33, "categoryId": 2, "name": "Капуста японская Мизуна Грин", "price": "1.29", "height": 70, "image": "/images/semena-15.webp" },
-    { "id": 34, "categoryId": 2, "name": "Огурец Аладдин", "price": "1.29", "height": 115, "image": "/images/semena-16.webp" },
-    { "id": 35, "categoryId": 2, "name": "Редис Илка", "price": "1.29", "height": 60, "image": "/images/semena-17.webp" },
-    { "id": 36, "categoryId": 2, "name": "Редька дайкон Бивень Мамонта", "price": "1.29", "height": 65, "image": "/images/semena-18.webp" },
-
-    { "id": 37, "categoryId": 3, "name": "Гортензия Кэнди Лав", "price": "27.99", "height": 100, "image": "/images/gortenzia-01.webp" },
-    { "id": 38, "categoryId": 3, "name": "Гортензия Дарлидо", "price": "13.99", "height": 90, "image": "/images/gortenzia-02.webp" },
-    { "id": 39, "categoryId": 3, "name": "Гортензия Роял Флауэр", "price": "27.99", "height": 102, "image": "/images/gortenzia-03.webp" },
-    { "id": 40, "categoryId": 3, "name": "Гортензия Мэджикал Свит Саммер", "price": "27.99", "height": 98, "image": "/images/gortenzia-04.webp" },
-    { "id": 41, "categoryId": 3, "name": "Гортензия Пиксио", "price": "27.99", "height": 94, "image": "/images/gortenzia-05.webp" },
-    { "id": 42, "categoryId": 3, "name": "Гортензия Краса Лесково", "price": "27.99", "height": 100, "image": "/images/gortenzia-06.webp" },
-    { "id": 43, "categoryId": 3, "name": "Гортензия Мэджика Старлайт", "price": "27.99", "height": 96, "image": "/images/gortenzia-07.webp" },
-    { "id": 44, "categoryId": 3, "name": "Гортензия Геркулес", "price": "27.99", "height": 104, "image": "/images/gortenzia-08.webp" },
-    { "id": 45, "categoryId": 3, "name": "Гортензия Мэджикал Флейм", "price": "27.99", "height": 92, "image": "/images/gortenzia-09.webp" },
-    { "id": 46, "categoryId": 3, "name": "Гортензия Файерлайт", "price": "27.99", "height": 90, "image": "/images/gortenzia-10.webp" },
-    { "id": 47, "categoryId": 3, "name": "Гортензия Ленарт Уайт", "price": "11.99", "height": 88, "image": "/images/gortenzia-11.webp" },
-    { "id": 48, "categoryId": 3, "name": "Гортензия Полар Бир", "price": "13.99", "height": 86, "image": "/images/gortenzia-12.webp" },
-    { "id": 49, "categoryId": 3, "name": "Гортензия Сильвер Доллар", "price": "11.99", "height": 84, "image": "/images/gortenzia-13.webp" },
-    { "id": 50, "categoryId": 3, "name": "Гортензия Вимс Ред", "price": "35.99", "height": 106, "image": "/images/gortenzia-14.webp" },
-    { "id": 51, "categoryId": 3, "name": "Гортензия Самарская Лидия", "price": "17.99", "height": 94, "image": "/images/gortenzia-15.webp" },
-    { "id": 52, "categoryId": 3, "name": "Гортензия Конфетти", "price": "18.99", "height": 92, "image": "/images/gortenzia-16.webp" },
-    { "id": 53, "categoryId": 3, "name": "Гортензия Граффити", "price": "27.99", "height": 100, "image": "/images/gortenzia-17.webp" },
-    { "id": 54, "categoryId": 3, "name": "Гортензия Юник", "price": "13.99", "height": 88, "image": "/images/gortenzia-18.webp" },
-
-    { "id": 55, "categoryId": 4, "name": "Гладиолус Джессика", "price": "1.99", "height": 110, "image": "/images/lukovich-01.webp" },
-    { "id": 56, "categoryId": 4, "name": "Гладиолус Овация", "price": "1.99", "height": 112, "image": "/images/lukovich-02.webp" },
-    { "id": 57, "categoryId": 4, "name": "Гладиолус Присцилла", "price": "1.99", "height": 108, "image": "/images/lukovich-03.webp" },
-    { "id": 58, "categoryId": 4, "name": "Гладиолус Рикс Фриззл", "price": "2.49", "height": 114, "image": "/images/lukovich-04.webp" },
-    { "id": 59, "categoryId": 4, "name": "Гладиолус Лас Вегас", "price": "2.49", "height": 116, "image": "/images/lukovich-05.webp" },
-    { "id": 60, "categoryId": 4, "name": "Гладиолус Зизани", "price": "2.49", "height": 112, "image": "/images/lukovich-06.webp" },
-    { "id": 61, "categoryId": 4, "name": "Гладиолус Могикан", "price": "2.49", "height": 118, "image": "/images/lukovich-07.webp" },
-    { "id": 62, "categoryId": 4, "name": "Гладиолус Момбаса", "price": "2.99", "height": 120, "image": "/images/lukovich-08.webp" },
-    { "id": 63, "categoryId": 4, "name": "Ирис Симфони", "price": "2.99", "height": 90, "image": "/images/lukovich-09.webp" },
-    { "id": 64, "categoryId": 4, "name": "Ирис Уайт Эксельсиор", "price": "2.99", "height": 88, "image": "/images/lukovich-10.webp" },
-    { "id": 65, "categoryId": 4, "name": "Анемона, смесь", "price": "2.99", "height": 70, "image": "/images/lukovich-11.webp" },
-    { "id": 66, "categoryId": 4, "name": "Спараксис, смесь", "price": "3.49", "height": 75, "image": "/images/lukovich-12.webp" },
-    { "id": 67, "categoryId": 4, "name": "Лиатрис Спиката", "price": "3.49", "height": 95, "image": "/images/lukovich-13.webp" },
-    { "id": 68, "categoryId": 4, "name": "Анемона Лорд Лейтенант", "price": "3.49", "height": 72, "image": "/images/lukovich-14.webp" },
-    { "id": 69, "categoryId": 4, "name": "Тигридия павлинья, смесь", "price": "3.49", "height": 80, "image": "/images/lukovich-15.webp" },
-    { "id": 70, "categoryId": 4, "name": "Бегония Фортуна", "price": "3.49", "height": 60, "image": "/images/lukovich-16.webp" },
-    { "id": 71, "categoryId": 4, "name": "Гладиолус Блю Айсл", "price": "3.99", "height": 116, "image": "/images/lukovich-17.webp" },
-    { "id": 72, "categoryId": 4, "name": "Иксия, смесь", "price": "3.99", "height": 85, "image": "/images/lukovich-18.webp" },
-
-    { "id": 73, "categoryId": 5, "name": "Роза Би Прауд", "price": "19.99", "height": 84, "image": "/images/sadrose-01.webp" },
-    { "id": 74, "categoryId": 5, "name": "Роза Дварф Уайт", "price": "19.99", "height": 78, "image": "/images/sadrose-02.webp" },
-    { "id": 75, "categoryId": 5, "name": "Роза Мел Би", "price": "19.99", "height": 82, "image": "/images/sadrose-03.webp" },
-    { "id": 76, "categoryId": 5, "name": "Роза нозоми", "price": "19.99", "height": 80, "image": "/images/sadrose-04.webp" },
-    { "id": 77, "categoryId": 5, "name": "Роза Уайт Фейри", "price": "21.49", "height": 76, "image": "/images/sadrose-05.webp" },
-    { "id": 78, "categoryId": 5, "name": "Роза А Шропшир Лэд", "price": "21.49", "height": 86, "image": "/images/sadrose-06.webp" },
-    { "id": 79, "categoryId": 5, "name": "Роза Абракадабра", "price": "21.49", "height": 88, "image": "/images/sadrose-07.webp" },
-    { "id": 80, "categoryId": 5, "name": "Роза Айриш Хоуп", "price": "21.49", "height": 84, "image": "/images/sadrose-08.webp" },
-    { "id": 81, "categoryId": 5, "name": "Роза Айсберг", "price": "22.99", "height": 90, "image": "/images/sadrose-09.webp" },
-    { "id": 82, "categoryId": 5, "name": "Роза Алегрия", "price": "22.99", "height": 86, "image": "/images/sadrose-10.webp" },
-    { "id": 83, "categoryId": 5, "name": "Роза Александра МакКензи", "price": "22.99", "height": 88, "image": "/images/sadrose-11.webp" },
-    { "id": 84, "categoryId": 5, "name": "Роза Альберих", "price": "23.49", "height": 90, "image": "/images/sadrose-12.webp" },
-    { "id": 85, "categoryId": 5, "name": "Роза Амадеус", "price": "23.49", "height": 92, "image": "/images/sadrose-13.webp" },
-    { "id": 86, "categoryId": 5, "name": "Роза Анни Софи Пик", "price": "23.99", "height": 94, "image": "/images/sadrose-14.webp" },
-    { "id": 87, "categoryId": 5, "name": "Роза Ариана де Ротшильд", "price": "23.49", "height": 90, "image": "/images/sadrose-15.webp" },
-    { "id": 88, "categoryId": 5, "name": "Роза Аут оф Розенхайм", "price": "24.49", "height": 96, "image": "/images/sadrose-16.webp" },
-    { "id": 89, "categoryId": 5, "name": "Роза Баззи Маджента", "price": "24.99", "height": 98, "image": "/images/sadrose-17.webp" },
-    { "id": 90, "categoryId": 5, "name": "Роза Баронесса", "price": "24.99", "height": 94, "image": "/images/sadrose-18.webp" },
-
-    { "id": 91, "categoryId": 6, "name": "Вейгела Нана Пурпереа", "price": "10.99", "height": 90, "image": "/images/kust-01.webp" },
-    { "id": 92, "categoryId": 6, "name": "Вайгела Эвита", "price": "10.99", "height": 88, "image": "/images/kust-02.webp" },
-    { "id": 93, "categoryId": 6, "name": "Лапчатка Голдстар", "price": "10.99", "height": 80, "image": "/images/kust-03.webp" },
-    { "id": 94, "categoryId": 6, "name": "Лапчатка Маккейс Уайт", "price": "10.99", "height": 78, "image": "/images/kust-04.webp" },
-    { "id": 95, "categoryId": 6, "name": "Пузыреплодник Андре", "price": "11.99", "height": 110, "image": "/images/kust-05.webp" },
-    { "id": 96, "categoryId": 6, "name": "Пузыреплодник Диаболо", "price": "11.99", "height": 115, "image": "/images/kust-06.webp" },
-    { "id": 97, "categoryId": 6, "name": "Пузыреплодник Литл Джокер", "price": "11.99", "height": 105, "image": "/images/kust-07.webp" },
-    { "id": 98, "categoryId": 6, "name": "Вейгела Боскуп Глори", "price": "12.99", "height": 92, "image": "/images/kust-08.webp" },
-    { "id": 99, "categoryId": 6, "name": "Вейгела Олимпиада", "price": "12.99", "height": 94, "image": "/images/kust-09.webp" },
-    { "id": 100, "categoryId": 6, "name": "Гортензия Бомбшелл", "price": "12.99", "height": 96, "image": "/images/kust-10.webp" },
-    { "id": 101, "categoryId": 6, "name": "Гортензия Ванилла Фрейз", "price": "12.99", "height": 98, "image": "/images/kust-11.webp" },
-    { "id": 102, "categoryId": 6, "name": "Гортензия Вимс Ред", "price": "13.99", "height": 100, "image": "/images/gortenzia-14.webp" },
-    { "id": 103, "categoryId": 6, "name": "Гортензия Граффити", "price": "13.99", "height": 98, "image": "/images/gortenzia-17.webp" },
-    { "id": 104, "categoryId": 6, "name": "Гортензия Конфетти", "price": "13.99", "height": 96, "image": "/images/gortenzia-16.webp" },
-    { "id": 105, "categoryId": 6, "name": "Гортенизя Лаймлайт", "price": "13.99", "height": 102, "image": "/images/kust-11.webp" },
-    { "id": 106, "categoryId": 6, "name": "Гортензия Мохито", "price": "13.99", "height": 100, "image": "/images/kust-12.webp" },
-    { "id": 107, "categoryId": 6, "name": "Гортензия Мэджикал Свит Саммер", "price": "13.99", "height": 98, "image": "/images/gortenzia-04.webp" },
-    { "id": 108, "categoryId": 6, "name": "Гортензия Мэджикал Флейм", "price": "13.99", "height": 96, "image": "/images/gortenzia-09.webp" },
-
-    { "id": 109, "categoryId": 7, "name": "Флокс Ред", "price": "5.49", "height": 85, "image": "/images/mnogolet-01.webp" },
-    { "id": 110, "categoryId": 7, "name": "Флокс Фортуна", "price": "5.49", "height": 82, "image": "/images/mnogolet-02.webp" },
-    { "id": 111, "categoryId": 7, "name": "Флокс Брайт Айз", "price": "6.49", "height": 88, "image": "/images/mnogolet-03.webp" },
-    { "id": 112, "categoryId": 7, "name": "Флокс Классик Классис", "price": "6.49", "height": 86, "image": "/images/mnogolet-04.webp" },
-    { "id": 113, "categoryId": 7, "name": "Лилейник Бонанза", "price": "6.99", "height": 90, "image": "/images/mnogolet-05.webp" },
-    { "id": 114, "categoryId": 7, "name": "Лилейник Стелла де Оро", "price": "6.99", "height": 88, "image": "/images/mnogolet-06.webp" },
-    { "id": 115, "categoryId": 7, "name": "Флокс Зе Кинг", "price": "6.99", "height": 92, "image": "/images/mnogolet-07.webp" },
-    { "id": 116, "categoryId": 7, "name": "Хоста Альбомаргината", "price": "7.49", "height": 70, "image": "/images/mnogolet-08.webp" },
-    { "id": 117, "categoryId": 7, "name": "Астра Феллоушип", "price": "7.49", "height": 95, "image": "/images/mnogolet-09.webp" },
-    { "id": 118, "categoryId": 7, "name": "Хоста Антиох", "price": "7.49", "height": 72, "image": "/images/mnogolet-10.webp" },
-    { "id": 119, "categoryId": 7, "name": "Хоста Голд Стандарт", "price": "7.99", "height": 75, "image": "/images/mnogolet-11.webp" },
-    { "id": 120, "categoryId": 7, "name": "Хоста Хальцион", "price": "7.99", "height": 74, "image": "/images/mnogolet-12.webp" },
-    { "id": 121, "categoryId": 7, "name": "Хризантема Брансаунд", "price": "7.99", "height": 98, "image": "/images/mnogolet-13.webp" },
-    { "id": 122, "categoryId": 7, "name": "Хризантема Трикки Уайт", "price": "8.49", "height": 100, "image": "/images/mnogolet-14.webp" },
-    { "id": 123, "categoryId": 7, "name": "Астильба Вероника Клоуз", "price": "8.49", "height": 92, "image": "/images/mnogolet-15.webp" },
-    { "id": 124, "categoryId": 7, "name": "Астильба Перпл", "price": "8.49", "height": 90, "image": "/images/mnogolet-16.webp" },
-    { "id": 125, "categoryId": 7, "name": "Лилейник Луиза Манелис", "price": "8.99", "height": 94, "image": "/images/mnogolet-17.webp" },
-    { "id": 126, "categoryId": 7, "name": "Лилейник Найт Беакон", "price": "8.99", "height": 96, "image": "/images/mnogolet-18.webp" },
-
-    { "id": 127, "categoryId": 8, "name": "Туя Европа Голд", "price": "8.99", "height": 150, "image": "/images/elki-01.webp" },
-    { "id": 128, "categoryId": 8, "name": "Туя Брабант", "price": "14.99", "height": 200, "image": "/images/elki-02.webp" },
-    { "id": 129, "categoryId": 8, "name": "Туя Даника", "price": "14.99", "height": 120, "image": "/images/elki-03.webp" },
-    { "id": 130, "categoryId": 8, "name": "Туя Смарагд", "price": "15.99", "height": 180, "image": "/images/elki-04.webp" },
-    { "id": 131, "categoryId": 8, "name": "Купрессоципарис Кастлевеллан", "price": "15.99", "height": 220, "image": "/images/elki-05.webp" },
-    { "id": 132, "categoryId": 8, "name": "Туя Тини Тим", "price": "15.99", "height": 80, "image": "/images/elki-06.webp" },
-    { "id": 133, "categoryId": 8, "name": "Ель Глаука Маджестик Блю", "price": "15.99", "height": 250, "image": "/images/elki-07.webp" },
-    { "id": 134, "categoryId": 8, "name": "Ель Кейбаб", "price": "16.49", "height": 240, "image": "/images/elki-08.webp" },
-    { "id": 135, "categoryId": 8, "name": "Ель Коника", "price": "16.49", "height": 100, "image": "/images/elki-09.webp" },
-    { "id": 136, "categoryId": 8, "name": "Можжевельник Арнольд", "price": "16.99", "height": 130, "image": "/images/elki-10.webp" },
-    { "id": 137, "categoryId": 8, "name": "Сосна Пумилио", "price": "17.49", "height": 90, "image": "/images/elki-11.webp" },
-    { "id": 138, "categoryId": 8, "name": "Можжевельник Дрим Джой", "price": "17.49", "height": 110, "image": "/images/elki-12.webp" },
-    { "id": 139, "categoryId": 8, "name": "Можжевельник Сайрокет", "price": "17.49", "height": 140, "image": "/images/elki-13.webp" },
-    { "id": 140, "categoryId": 8, "name": "Тис Хикси", "price": "17.99", "height": 120, "image": "/images/elki-14.webp" },
-    { "id": 141, "categoryId": 8, "name": "Сосна Мугус", "price": "17.99", "height": 95, "image": "/images/elki-15.webp" },
-    { "id": 142, "categoryId": 8, "name": "Туя западная Даника Голд", "price": "17.99", "height": 125, "image": "/images/elki-16.webp" },
-    { "id": 143, "categoryId": 8, "name": "Сосна кедровая сибирская", "price": "17.99", "height": 300, "image": "/images/elki-17.webp" },
-    { "id": 144, "categoryId": 8, "name": "Ель Сан он зе Скай", "price": "18.49", "height": 110, "image": "/images/elki-18.webp" },
-
-    { "id": 145, "categoryId": 9, "name": "Защита комплексная 30мл", "price": "2.49", "height": 15, "image": "/images/biopreparat-01.webp" },
-    { "id": 146, "categoryId": 9, "name": "Защита почвы 30мл", "price": "2.49", "height": 15, "image": "/images/biopreparat-02.webp" },
-    { "id": 147, "categoryId": 9, "name": "Здоровье флоры 30мл", "price": "2.49", "height": 15, "image": "/images/biopreparat-03.webp" },
-    { "id": 148, "categoryId": 9, "name": "Природная защита 30мл", "price": "2.49", "height": 15, "image": "/images/biopreparat-04.webp" },
-    { "id": 149, "categoryId": 9, "name": "Энергия роста 30мл", "price": "2.49", "height": 15, "image": "/images/biopreparat-05.webp" },
-    { "id": 150, "categoryId": 9, "name": "Биостимулятор роста универсальный Aqua 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-06.webp" },
-    { "id": 151, "categoryId": 9, "name": "Защита комплексна Aqua 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-07.webp" },
-    { "id": 152, "categoryId": 9, "name": "Природная защита Aqua 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-08.webp" },
-    { "id": 153, "categoryId": 9, "name": "Энергия роста Aqua 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-09.webp" },
-    { "id": 154, "categoryId": 9, "name": "Здоровье и красота комнатных растений Aqua 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-10.webp" },
-    { "id": 155, "categoryId": 9, "name": "Растим овощи", "price": "8.99", "height": 25, "image": "/images/biopreparat-11.webp" },
-    { "id": 156, "categoryId": 9, "name": "Растим плоды", "price": "8.99", "height": 25, "image": "/images/biopreparat-12.webp" },
-    { "id": 157, "categoryId": 9, "name": "Растим рассаду 0.2л", "price": "8.99", "height": 25, "image": "/images/biopreparat-13.webp" },
-    { "id": 158, "categoryId": 9, "name": "Растим сад", "price": "8.99", "height": 25, "image": "/images/biopreparat-14.webp" },
-    { "id": 159, "categoryId": 9, "name": "Растим цветы", "price": "8.99", "height": 25, "image": "/images/biopreparat-15.webp" },
-    { "id": 160, "categoryId": 9, "name": "Растим ягоды", "price": "8.99", "height": 25, "image": "/images/biopreparat-16.webp" },
-    { "id": 161, "categoryId": 9, "name": "Защита комплексная 0.25л", "price": "8.99", "height": 30, "image": "/images/biopreparat-17.webp" },
-    { "id": 162, "categoryId": 9, "name": "Защита почвы 0.25л", "price": "8.99", "height": 30, "image": "/images/biopreparat-18.webp" },
-
-    { "id": 163, "categoryId": 10, "name": "Гладиолус Рикс Фриззл", "price": "2.49", "height": 114, "image": "/images/gladioulus-01.webp" },
-    { "id": 164, "categoryId": 10, "name": "Гладиолус Могикан", "price": "2.99", "height": 118, "image": "/images/gladioulus-02.webp" },
-    { "id": 165, "categoryId": 10, "name": "Гладиолус Норма Джин", "price": "2.99", "height": 116, "image": "/images/gladioulus-03.webp" },
-    { "id": 166, "categoryId": 10, "name": "Гладиолус Агатовые бусы", "price": "4.99", "height": 120, "image": "/images/gladioulus-04.webp" },
-    { "id": 167, "categoryId": 10, "name": "Гладиолус Аксакал", "price": "5.49", "height": 112, "image": "/images/gladioulus-05.webp" },
-    { "id": 168, "categoryId": 10, "name": "Гладиолус Аннушка", "price": "5.49", "height": 110, "image": "/images/gladioulus-06.webp" },
-    { "id": 169, "categoryId": 10, "name": "Гладиолус Апельсиновый мираж", "price": "5.99", "height": 118, "image": "/images/gladioulus-07.webp" },
-    { "id": 170, "categoryId": 10, "name": "Гладиолус Апостол Петр", "price": "5.99", "height": 116, "image": "/images/gladioulus-08.webp" },
-    { "id": 171, "categoryId": 10, "name": "Гладиолус Аякс", "price": "5.99", "height": 114, "image": "/images/gladioulus-09.webp" },
-    { "id": 172, "categoryId": 10, "name": "Гладиолус Барбизон", "price": "5.99", "height": 112, "image": "/images/gladioulus-10.webp" },
-    { "id": 173, "categoryId": 10, "name": "Гладиолус Белый Волшебник", "price": "5.99", "height": 110, "image": "/images/gladioulus-11.webp" },
-    { "id": 174, "categoryId": 10, "name": "Гладиолус Белый медведь", "price": "5.99", "height": 118, "image": "/images/gladioulus-12.webp" },
-    { "id": 175, "categoryId": 10, "name": "Гладиолус Божественная серенада", "price": "5.99", "height": 116, "image": "/images/gladioulus-13.webp" },
-    { "id": 176, "categoryId": 10, "name": "Гладиолус Варьете", "price": "6.49", "height": 120, "image": "/images/gladioulus-14.webp" },
-    { "id": 177, "categoryId": 10, "name": "Гладиолус Вечерний Сочи", "price": "6.49", "height": 114, "image": "/images/gladioulus-15.webp" },
-    { "id": 178, "categoryId": 10, "name": "Гладиолус Вечерняя сирень", "price": "6.49", "height": 112, "image": "/images/gladioulus-16.webp" },
-    { "id": 179, "categoryId": 10, "name": "Гладиолус Врата рая", "price": "6.99", "height": 118, "image": "/images/gladioulus-17.webp" },
-    { "id": 180, "categoryId": 10, "name": "Гдадиолус Демон", "price": "7.49", "height": 120, "image": "/images/gladioulus-18.webp" },
-
-    { "id": 181, "categoryId": 11, "name": "Клюква Станкович Р9", "price": "8.99", "height": 40, "image": "/images/yagodi-01.webp" },
-    { "id": 182, "categoryId": 11, "name": "Голубика Нельсон Р9", "price": "9.99", "height": 100, "image": "/images/yagodi-02.webp" },
-    { "id": 183, "categoryId": 11, "name": "Голубика Осорно Р9", "price": "9.99", "height": 95, "image": "/images/yagodi-03.webp" },
-    { "id": 184, "categoryId": 11, "name": "Клюква Бен Лир Р9", "price": "9.99", "height": 45, "image": "/images/yagodi-04.webp" },
-    { "id": 185, "categoryId": 11, "name": "Клюква Пилигрим Р9", "price": "9.99", "height": 42, "image": "/images/yagodi-05.webp" },
-    { "id": 186, "categoryId": 11, "name": "Клюква Стивенс Р9", "price": "12.99", "height": 50, "image": "/images/yagodi-06.webp" },
-    { "id": 187, "categoryId": 11, "name": "Голубик Блю Голд К1,5", "price": "12.99", "height": 90, "image": "/images/yagodi-07.webp" },
-    { "id": 188, "categoryId": 11, "name": "Голубика Бригитта Блю К1,5", "price": "12.99", "height": 92, "image": "/images/yagodi-08.webp" },
-    { "id": 189, "categoryId": 11, "name": "Голубика Голд Траубе К1,5", "price": "12.99", "height": 88, "image": "/images/yagodi-09.webp" },
-    { "id": 190, "categoryId": 11, "name": "Голубика Денис Блю К1,5", "price": "12.99", "height": 94, "image": "/images/yagodi-10.webp" },
-    { "id": 191, "categoryId": 11, "name": "Голубика Либерти К1,5", "price": "13.99", "height": 96, "image": "/images/yagodi-11.webp" },
-    { "id": 192, "categoryId": 11, "name": "Голубика Спартан К1,5", "price": "13.99", "height": 98, "image": "/images/yagodi-12.webp" },
-    { "id": 193, "categoryId": 11, "name": "Ежевика Коламбия Гигант Р9", "price": "13.99", "height": 150, "image": "/images/yagodi-13.webp" },
-    { "id": 194, "categoryId": 11, "name": "Ежевика Натчез Р9", "price": "13.99", "height": 145, "image": "/images/yagodi-14.webp" },
-    { "id": 195, "categoryId": 11, "name": "Ежевика Небеса Р9", "price": "14.49", "height": 155, "image": "/images/yagodi-15.webp" },
-    { "id": 196, "categoryId": 11, "name": "Ежевика Трипл Краун Р9", "price": "14.49", "height": 160, "image": "/images/yagodi-16.webp" },
-    { "id": 197, "categoryId": 11, "name": "Жимолость Войтек С2", "price": "14.49", "height": 120, "image": "/images/yagodi-17.webp" },
-    { "id": 198, "categoryId": 11, "name": "Голубика Блюджей", "price": "14.99", "height": 100, "image": "/images/yagodi-18.webp" },
-
-    { "id": 199, "categoryId": 12, "name": "Клематис Аленушка", "price": "29.99", "height": 250, "image": "/images/klematis-01.webp" },
-    { "id": 200, "categoryId": 12, "name": "Клематис Варшавска Найк", "price": "29.99", "height": 240, "image": "/images/klematis-02.webp" },
-    { "id": 201, "categoryId": 12, "name": "Клематис Голубой Ангел", "price": "29.99", "height": 230, "image": "/images/klematis-03.webp" },
-    { "id": 202, "categoryId": 12, "name": "Клематис Йеллоу Куин", "price": "29.99", "height": 220, "image": "/images/klematis-04.webp" },
-    { "id": 203, "categoryId": 12, "name": "Клематис Маньчжурский", "price": "29.99", "height": 200, "image": "/images/klematis-05.webp" },
-    { "id": 204, "categoryId": 12, "name": "Клематис Мульти Блю", "price": "32.99", "height": 260, "image": "/images/klematis-06.webp" },
-    { "id": 205, "categoryId": 12, "name": "Клематис Нелли Мозер", "price": "32.99", "height": 250, "image": "/images/klematis-07.webp" },
-    { "id": 206, "categoryId": 12, "name": "Клематис Пантер", "price": "32.99", "height": 240, "image": "/images/klematis-08.webp" },
-    { "id": 207, "categoryId": 12, "name": "Клематис Перида", "price": "33.99", "height": 270, "image": "/images/klematis-09.webp" },
-    { "id": 208, "categoryId": 12, "name": "Клематис Славянка", "price": "33.99", "height": 260, "image": "/images/klematis-10.webp" },
-    { "id": 209, "categoryId": 12, "name": "Клематис Солидарность", "price": "33.99", "height": 250, "image": "/images/klematis-11.webp" },
-    { "id": 210, "categoryId": 12, "name": "Клематис Стефан Франчак", "price": "33.99", "height": 240, "image": "/images/klematis-12.webp" },
-    { "id": 211, "categoryId": 12, "name": "Клематис Халина Нолл", "price": "33.99", "height": 230, "image": "/images/klematis-13.webp" },
-    { "id": 212, "categoryId": 12, "name": "Клематис Чейндж оф Харт", "price": "34.99", "height": 280, "image": "/images/klematis-14.webp" },
-    { "id": 213, "categoryId": 12, "name": "Клематис Сансет", "price": "34.99", "height": 270, "image": "/images/klematis-15.webp" },
-    { "id": 214, "categoryId": 12, "name": "Клематис Вайлдфаер", "price": "34.99", "height": 260, "image": "/images/klematis-16.webp" },
-    { "id": 215, "categoryId": 12, "name": "Клематис Президент", "price": "34.99", "height": 250, "image": "/images/klematis-17.webp" },
-    { "id": 216, "categoryId": 12, "name": "Клематис Ашва", "price": "34.99", "height": 240, "image": "/images/klematis-18.webp" }
+    {
+      "id": "1",
+      "categoryId": 1,
+      "name": "Роза Шахерезада",
+      "price": "24.99",
+      "height": 80,
+      "image": "/images/rose-01.webp"
+    },
+    {
+      "id": "2",
+      "categoryId": 1,
+      "name": "Роза Психея",
+      "price": "27.99",
+      "height": 90,
+      "image": "/images/rose-02.webp"
+    },
+    {
+      "id": "3",
+      "categoryId": 1,
+      "name": "Роза Корал Желе",
+      "price": "25.99",
+      "height": 86,
+      "image": "/images/rose-03.webp"
+    },
+    {
+      "id": "4",
+      "categoryId": 1,
+      "name": "Роза Аои",
+      "price": "24.00",
+      "height": 78,
+      "image": "/images/rose-04.webp"
+    },
+    {
+      "id": "5",
+      "categoryId": 1,
+      "name": "Роза Принцесса Каори",
+      "price": "26.99",
+      "height": 88,
+      "image": "/images/rose-05.webp"
+    },
+    {
+      "id": "6",
+      "categoryId": 1,
+      "name": "Роза Микото",
+      "price": "26.99",
+      "height": 82,
+      "image": "/images/rose-06.webp"
+    },
+    {
+      "id": "7",
+      "categoryId": 1,
+      "name": "Роза Либелула",
+      "price": "27.99",
+      "height": 92,
+      "image": "/images/rose-07.webp"
+    },
+    {
+      "id": "8",
+      "categoryId": 1,
+      "name": "Роза Блю Мун Стоун",
+      "price": "24.99",
+      "height": 84,
+      "image": "/images/rose-08.webp"
+    },
+    {
+      "id": "9",
+      "categoryId": 1,
+      "name": "Роза Принцесса Айко",
+      "price": "25.99",
+      "height": 80,
+      "image": "/images/rose-09.webp"
+    },
+    {
+      "id": "10",
+      "categoryId": 1,
+      "name": "Роза Масора",
+      "price": "24.99",
+      "height": 86,
+      "image": "/images/rose-10.webp"
+    },
+    {
+      "id": "11",
+      "categoryId": 1,
+      "name": "Роза Ча Ча",
+      "price": "28.00",
+      "height": 94,
+      "image": "/images/rose-11.webp"
+    },
+    {
+      "id": "12",
+      "categoryId": 1,
+      "name": "Роза Вагулетта",
+      "price": "24.99",
+      "height": 78,
+      "image": "/images/rose-12.webp"
+    },
+    {
+      "id": "13",
+      "categoryId": 1,
+      "name": "Роза Салон",
+      "price": "27.99",
+      "height": 90,
+      "image": "/images/rose-13.webp"
+    },
+    {
+      "id": "14",
+      "categoryId": 1,
+      "name": "Роза Каната",
+      "price": "26.00",
+      "height": 82,
+      "image": "/images/rose-14.webp"
+    },
+    {
+      "id": "15",
+      "categoryId": 1,
+      "name": "Роза Гео Лаоен",
+      "price": "25.99",
+      "height": 88,
+      "image": "/images/rose-15.webp"
+    },
+    {
+      "id": "16",
+      "categoryId": 1,
+      "name": "Роза Йоли",
+      "price": "24.99",
+      "height": 80,
+      "image": "/images/rose-16.webp"
+    },
+    {
+      "id": "17",
+      "categoryId": 1,
+      "name": "Роза Роял Палас",
+      "price": "26.99",
+      "height": 92,
+      "image": "/images/rose-17.webp"
+    },
+    {
+      "id": "18",
+      "categoryId": 1,
+      "name": "Роза Рамукан",
+      "price": "24.00",
+      "height": 76,
+      "image": "/images/rose-18.webp"
+    },
+    {
+      "id": "19",
+      "categoryId": 2,
+      "name": "Томат Зорка",
+      "price": "0.89",
+      "height": 110,
+      "image": "/images/semena-01.webp"
+    },
+    {
+      "id": "20",
+      "categoryId": 2,
+      "name": "Перец сладкий Чырвоны Магнат",
+      "price": "0.89",
+      "height": 100,
+      "image": "/images/semena-02.webp"
+    },
+    {
+      "id": "21",
+      "categoryId": 2,
+      "name": "Томат Беркут",
+      "price": "0.89",
+      "height": 105,
+      "image": "/images/semena-03.webp"
+    },
+    {
+      "id": "22",
+      "categoryId": 2,
+      "name": "Томат Дивиденд",
+      "price": "0.89",
+      "height": 102,
+      "image": "/images/semena-04.webp"
+    },
+    {
+      "id": "23",
+      "categoryId": 2,
+      "name": "Томат Ирма",
+      "price": "0.89",
+      "height": 98,
+      "image": "/images/semena-05.webp"
+    },
+    {
+      "id": "24",
+      "categoryId": 2,
+      "name": "Томат Рэдгрант",
+      "price": "0.89",
+      "height": 108,
+      "image": "/images/semena-06.webp"
+    },
+    {
+      "id": "25",
+      "categoryId": 2,
+      "name": "Томат Стрела",
+      "price": "0.89",
+      "height": 104,
+      "image": "/images/semena-07.webp"
+    },
+    {
+      "id": "26",
+      "categoryId": 2,
+      "name": "Редис Квант",
+      "price": "1.19",
+      "height": 60,
+      "image": "/images/semena-08.webp"
+    },
+    {
+      "id": "27",
+      "categoryId": 2,
+      "name": "Салат Листовой Отили",
+      "price": "1.29",
+      "height": 55,
+      "image": "/images/semena-09.webp"
+    },
+    {
+      "id": "28",
+      "categoryId": 2,
+      "name": "Горох Олинда",
+      "price": "1.29",
+      "height": 120,
+      "image": "/images/semena-10.webp"
+    },
+    {
+      "id": "29",
+      "categoryId": 2,
+      "name": "Горох Преладо",
+      "price": "1.29",
+      "height": 118,
+      "image": "/images/semena-11.webp"
+    },
+    {
+      "id": "30",
+      "categoryId": 2,
+      "name": "Репа Петровска",
+      "price": "1.29",
+      "height": 62,
+      "image": "/images/semena-12.webp"
+    },
+    {
+      "id": "31",
+      "categoryId": 2,
+      "name": "Лук репчатый Вольски",
+      "price": "1.29",
+      "height": 58,
+      "image": "/images/semena-13.webp"
+    },
+    {
+      "id": "32",
+      "categoryId": 2,
+      "name": "Салат листовой Энтони",
+      "price": "1.29",
+      "height": 56,
+      "image": "/images/semena-14.webp"
+    },
+    {
+      "id": "33",
+      "categoryId": 2,
+      "name": "Капуста японская Мизуна Грин",
+      "price": "1.29",
+      "height": 70,
+      "image": "/images/semena-15.webp"
+    },
+    {
+      "id": "34",
+      "categoryId": 2,
+      "name": "Огурец Аладдин",
+      "price": "1.29",
+      "height": 115,
+      "image": "/images/semena-16.webp"
+    },
+    {
+      "id": "35",
+      "categoryId": 2,
+      "name": "Редис Илка",
+      "price": "1.29",
+      "height": 60,
+      "image": "/images/semena-17.webp"
+    },
+    {
+      "id": "36",
+      "categoryId": 2,
+      "name": "Редька дайкон Бивень Мамонта",
+      "price": "1.29",
+      "height": 65,
+      "image": "/images/semena-18.webp"
+    },
+    {
+      "id": "37",
+      "categoryId": 3,
+      "name": "Гортензия Кэнди Лав",
+      "price": "27.99",
+      "height": 100,
+      "image": "/images/gortenzia-01.webp"
+    },
+    {
+      "id": "38",
+      "categoryId": 3,
+      "name": "Гортензия Дарлидо",
+      "price": "13.99",
+      "height": 90,
+      "image": "/images/gortenzia-02.webp"
+    },
+    {
+      "id": "39",
+      "categoryId": 3,
+      "name": "Гортензия Роял Флауэр",
+      "price": "27.99",
+      "height": 102,
+      "image": "/images/gortenzia-03.webp"
+    },
+    {
+      "id": "40",
+      "categoryId": 3,
+      "name": "Гортензия Мэджикал Свит Саммер",
+      "price": "27.99",
+      "height": 98,
+      "image": "/images/gortenzia-04.webp"
+    },
+    {
+      "id": "41",
+      "categoryId": 3,
+      "name": "Гортензия Пиксио",
+      "price": "27.99",
+      "height": 94,
+      "image": "/images/gortenzia-05.webp"
+    },
+    {
+      "id": "42",
+      "categoryId": 3,
+      "name": "Гортензия Краса Лесково",
+      "price": "27.99",
+      "height": 100,
+      "image": "/images/gortenzia-06.webp"
+    },
+    {
+      "id": "43",
+      "categoryId": 3,
+      "name": "Гортензия Мэджика Старлайт",
+      "price": "27.99",
+      "height": 96,
+      "image": "/images/gortenzia-07.webp"
+    },
+    {
+      "id": "44",
+      "categoryId": 3,
+      "name": "Гортензия Геркулес",
+      "price": "27.99",
+      "height": 104,
+      "image": "/images/gortenzia-08.webp"
+    },
+    {
+      "id": "45",
+      "categoryId": 3,
+      "name": "Гортензия Мэджикал Флейм",
+      "price": "27.99",
+      "height": 92,
+      "image": "/images/gortenzia-09.webp"
+    },
+    {
+      "id": "46",
+      "categoryId": 3,
+      "name": "Гортензия Файерлайт",
+      "price": "27.99",
+      "height": 90,
+      "image": "/images/gortenzia-10.webp"
+    },
+    {
+      "id": "47",
+      "categoryId": 3,
+      "name": "Гортензия Ленарт Уайт",
+      "price": "11.99",
+      "height": 88,
+      "image": "/images/gortenzia-11.webp"
+    },
+    {
+      "id": "48",
+      "categoryId": 3,
+      "name": "Гортензия Полар Бир",
+      "price": "13.99",
+      "height": 86,
+      "image": "/images/gortenzia-12.webp"
+    },
+    {
+      "id": "49",
+      "categoryId": 3,
+      "name": "Гортензия Сильвер Доллар",
+      "price": "11.99",
+      "height": 84,
+      "image": "/images/gortenzia-13.webp"
+    },
+    {
+      "id": "50",
+      "categoryId": 3,
+      "name": "Гортензия Вимс Ред",
+      "price": "35.99",
+      "height": 106,
+      "image": "/images/gortenzia-14.webp"
+    },
+    {
+      "id": "51",
+      "categoryId": 3,
+      "name": "Гортензия Самарская Лидия",
+      "price": "17.99",
+      "height": 94,
+      "image": "/images/gortenzia-15.webp"
+    },
+    {
+      "id": "52",
+      "categoryId": 3,
+      "name": "Гортензия Конфетти",
+      "price": "18.99",
+      "height": 92,
+      "image": "/images/gortenzia-16.webp"
+    },
+    {
+      "id": "53",
+      "categoryId": 3,
+      "name": "Гортензия Граффити",
+      "price": "27.99",
+      "height": 100,
+      "image": "/images/gortenzia-17.webp"
+    },
+    {
+      "id": "54",
+      "categoryId": 3,
+      "name": "Гортензия Юник",
+      "price": "13.99",
+      "height": 88,
+      "image": "/images/gortenzia-18.webp"
+    },
+    {
+      "id": "55",
+      "categoryId": 4,
+      "name": "Гладиолус Джессика",
+      "price": "1.99",
+      "height": 110,
+      "image": "/images/lukovich-01.webp"
+    },
+    {
+      "id": "56",
+      "categoryId": 4,
+      "name": "Гладиолус Овация",
+      "price": "1.99",
+      "height": 112,
+      "image": "/images/lukovich-02.webp"
+    },
+    {
+      "id": "57",
+      "categoryId": 4,
+      "name": "Гладиолус Присцилла",
+      "price": "1.99",
+      "height": 108,
+      "image": "/images/lukovich-03.webp"
+    },
+    {
+      "id": "58",
+      "categoryId": 4,
+      "name": "Гладиолус Рикс Фриззл",
+      "price": "2.49",
+      "height": 114,
+      "image": "/images/lukovich-04.webp"
+    },
+    {
+      "id": "59",
+      "categoryId": 4,
+      "name": "Гладиолус Лас Вегас",
+      "price": "2.49",
+      "height": 116,
+      "image": "/images/lukovich-05.webp"
+    },
+    {
+      "id": "60",
+      "categoryId": 4,
+      "name": "Гладиолус Зизани",
+      "price": "2.49",
+      "height": 112,
+      "image": "/images/lukovich-06.webp"
+    },
+    {
+      "id": "61",
+      "categoryId": 4,
+      "name": "Гладиолус Могикан",
+      "price": "2.49",
+      "height": 118,
+      "image": "/images/lukovich-07.webp"
+    },
+    {
+      "id": "62",
+      "categoryId": 4,
+      "name": "Гладиолус Момбаса",
+      "price": "2.99",
+      "height": 120,
+      "image": "/images/lukovich-08.webp"
+    },
+    {
+      "id": "63",
+      "categoryId": 4,
+      "name": "Ирис Симфони",
+      "price": "2.99",
+      "height": 90,
+      "image": "/images/lukovich-09.webp"
+    },
+    {
+      "id": "64",
+      "categoryId": 4,
+      "name": "Ирис Уайт Эксельсиор",
+      "price": "2.99",
+      "height": 88,
+      "image": "/images/lukovich-10.webp"
+    },
+    {
+      "id": "65",
+      "categoryId": 4,
+      "name": "Анемона, смесь",
+      "price": "2.99",
+      "height": 70,
+      "image": "/images/lukovich-11.webp"
+    },
+    {
+      "id": "66",
+      "categoryId": 4,
+      "name": "Спараксис, смесь",
+      "price": "3.49",
+      "height": 75,
+      "image": "/images/lukovich-12.webp"
+    },
+    {
+      "id": "67",
+      "categoryId": 4,
+      "name": "Лиатрис Спиката",
+      "price": "3.49",
+      "height": 95,
+      "image": "/images/lukovich-13.webp"
+    },
+    {
+      "id": "68",
+      "categoryId": 4,
+      "name": "Анемона Лорд Лейтенант",
+      "price": "3.49",
+      "height": 72,
+      "image": "/images/lukovich-14.webp"
+    },
+    {
+      "id": "69",
+      "categoryId": 4,
+      "name": "Тигридия павлинья, смесь",
+      "price": "3.49",
+      "height": 80,
+      "image": "/images/lukovich-15.webp"
+    },
+    {
+      "id": "70",
+      "categoryId": 4,
+      "name": "Бегония Фортуна",
+      "price": "3.49",
+      "height": 60,
+      "image": "/images/lukovich-16.webp"
+    },
+    {
+      "id": "71",
+      "categoryId": 4,
+      "name": "Гладиолус Блю Айсл",
+      "price": "3.99",
+      "height": 116,
+      "image": "/images/lukovich-17.webp"
+    },
+    {
+      "id": "72",
+      "categoryId": 4,
+      "name": "Иксия, смесь",
+      "price": "3.99",
+      "height": 85,
+      "image": "/images/lukovich-18.webp"
+    },
+    {
+      "id": "73",
+      "categoryId": 5,
+      "name": "Роза Би Прауд",
+      "price": "19.99",
+      "height": 84,
+      "image": "/images/sadrose-01.webp"
+    },
+    {
+      "id": "74",
+      "categoryId": 5,
+      "name": "Роза Дварф Уайт",
+      "price": "19.99",
+      "height": 78,
+      "image": "/images/sadrose-02.webp"
+    },
+    {
+      "id": "75",
+      "categoryId": 5,
+      "name": "Роза Мел Би",
+      "price": "19.99",
+      "height": 82,
+      "image": "/images/sadrose-03.webp"
+    },
+    {
+      "id": "76",
+      "categoryId": 5,
+      "name": "Роза Нозоми",
+      "price": "19.99",
+      "height": 80,
+      "image": "/images/sadrose-04.webp"
+    },
+    {
+      "id": "77",
+      "categoryId": 5,
+      "name": "Роза Уайт Фейри",
+      "price": "21.49",
+      "height": 76,
+      "image": "/images/sadrose-05.webp"
+    },
+    {
+      "id": "78",
+      "categoryId": 5,
+      "name": "Роза А Шропшир Лэд",
+      "price": "21.49",
+      "height": 86,
+      "image": "/images/sadrose-06.webp"
+    },
+    {
+      "id": "79",
+      "categoryId": 5,
+      "name": "Роза Абракадабра",
+      "price": "21.49",
+      "height": 88,
+      "image": "/images/sadrose-07.webp"
+    },
+    {
+      "id": "80",
+      "categoryId": 5,
+      "name": "Роза Айриш Хоуп",
+      "price": "21.49",
+      "height": 84,
+      "image": "/images/sadrose-08.webp"
+    },
+    {
+      "id": "81",
+      "categoryId": 5,
+      "name": "Роза Айсберг",
+      "price": "22.99",
+      "height": 90,
+      "image": "/images/sadrose-09.webp"
+    },
+    {
+      "id": "82",
+      "categoryId": 5,
+      "name": "Роза Алегрия",
+      "price": "22.99",
+      "height": 86,
+      "image": "/images/sadrose-10.webp"
+    },
+    {
+      "id": "83",
+      "categoryId": 5,
+      "name": "Роза Александра МакКензи",
+      "price": "22.99",
+      "height": 88,
+      "image": "/images/sadrose-11.webp"
+    },
+    {
+      "id": "84",
+      "categoryId": 5,
+      "name": "Роза Альберих",
+      "price": "23.49",
+      "height": 90,
+      "image": "/images/sadrose-12.webp"
+    },
+    {
+      "id": "85",
+      "categoryId": 5,
+      "name": "Роза Амадеус",
+      "price": "23.49",
+      "height": 92,
+      "image": "/images/sadrose-13.webp"
+    },
+    {
+      "id": "86",
+      "categoryId": 5,
+      "name": "Роза Анни Софи Пик",
+      "price": "23.99",
+      "height": 94,
+      "image": "/images/sadrose-14.webp"
+    },
+    {
+      "id": "87",
+      "categoryId": 5,
+      "name": "Роза Ариана де Ротшильд",
+      "price": "23.49",
+      "height": 90,
+      "image": "/images/sadrose-15.webp"
+    },
+    {
+      "id": "88",
+      "categoryId": 5,
+      "name": "Роза Аут оф Розенхайм",
+      "price": "24.49",
+      "height": 96,
+      "image": "/images/sadrose-16.webp"
+    },
+    {
+      "id": "89",
+      "categoryId": 5,
+      "name": "Роза Баззи Маджента",
+      "price": "24.99",
+      "height": 98,
+      "image": "/images/sadrose-17.webp"
+    },
+    {
+      "id": "90",
+      "categoryId": 5,
+      "name": "Роза Баронесса",
+      "price": "24.99",
+      "height": 94,
+      "image": "/images/sadrose-18.webp"
+    },
+    {
+      "id": "91",
+      "categoryId": 6,
+      "name": "Вейгела Нана Пурпереа",
+      "price": "10.99",
+      "height": 90,
+      "image": "/images/kust-01.webp"
+    },
+    {
+      "id": "92",
+      "categoryId": 6,
+      "name": "Вайгела Эвита",
+      "price": "10.99",
+      "height": 88,
+      "image": "/images/kust-02.webp"
+    },
+    {
+      "id": "93",
+      "categoryId": 6,
+      "name": "Лапчатка Голдстар",
+      "price": "10.99",
+      "height": 80,
+      "image": "/images/kust-03.webp"
+    },
+    {
+      "id": "94",
+      "categoryId": 6,
+      "name": "Лапчатка Маккейс Уайт",
+      "price": "10.99",
+      "height": 78,
+      "image": "/images/kust-04.webp"
+    },
+    {
+      "id": "95",
+      "categoryId": 6,
+      "name": "Пузыреплодник Андре",
+      "price": "11.99",
+      "height": 110,
+      "image": "/images/kust-05.webp"
+    },
+    {
+      "id": "96",
+      "categoryId": 6,
+      "name": "Пузыреплодник Диаболо",
+      "price": "11.99",
+      "height": 115,
+      "image": "/images/kust-06.webp"
+    },
+    {
+      "id": "97",
+      "categoryId": 6,
+      "name": "Пузыреплодник Литл Джокер",
+      "price": "11.99",
+      "height": 105,
+      "image": "/images/kust-07.webp"
+    },
+    {
+      "id": "98",
+      "categoryId": 6,
+      "name": "Вейгела Боскуп Глори",
+      "price": "12.99",
+      "height": 92,
+      "image": "/images/kust-08.webp"
+    },
+    {
+      "id": "99",
+      "categoryId": 6,
+      "name": "Вейгела Олимпиада",
+      "price": "12.99",
+      "height": 94,
+      "image": "/images/kust-09.webp"
+    },
+    {
+      "id": "100",
+      "categoryId": 6,
+      "name": "Гортензия Бомбшелл",
+      "price": "12.99",
+      "height": 96,
+      "image": "/images/kust-10.webp"
+    },
+    {
+      "id": "101",
+      "categoryId": 6,
+      "name": "Гортензия Ванилла Фрейз",
+      "price": "12.99",
+      "height": 98,
+      "image": "/images/kust-11.webp"
+    },
+    {
+      "id": "102",
+      "categoryId": 6,
+      "name": "Гортензия Вимс Ред",
+      "price": "13.99",
+      "height": 100,
+      "image": "/images/gortenzia-14.webp"
+    },
+    {
+      "id": "103",
+      "categoryId": 6,
+      "name": "Гортензия Граффити",
+      "price": "13.99",
+      "height": 98,
+      "image": "/images/gortenzia-17.webp"
+    },
+    {
+      "id": "104",
+      "categoryId": 6,
+      "name": "Гортензия Конфетти",
+      "price": "13.99",
+      "height": 96,
+      "image": "/images/gortenzia-16.webp"
+    },
+    {
+      "id": "105",
+      "categoryId": 6,
+      "name": "Гортенизя Лаймлайт",
+      "price": "13.99",
+      "height": 102,
+      "image": "/images/kust-11.webp"
+    },
+    {
+      "id": "106",
+      "categoryId": 6,
+      "name": "Гортензия Мохито",
+      "price": "13.99",
+      "height": 100,
+      "image": "/images/kust-12.webp"
+    },
+    {
+      "id": "107",
+      "categoryId": 6,
+      "name": "Гортензия Мэджикал Свит Саммер",
+      "price": "13.99",
+      "height": 98,
+      "image": "/images/gortenzia-04.webp"
+    },
+    {
+      "id": "108",
+      "categoryId": 6,
+      "name": "Гортензия Мэджикал Флейм",
+      "price": "13.99",
+      "height": 96,
+      "image": "/images/gortenzia-09.webp"
+    },
+    {
+      "id": "109",
+      "categoryId": 7,
+      "name": "Флокс Ред",
+      "price": "5.49",
+      "height": 85,
+      "image": "/images/mnogolet-01.webp"
+    },
+    {
+      "id": "110",
+      "categoryId": 7,
+      "name": "Флокс Фортуна",
+      "price": "5.49",
+      "height": 82,
+      "image": "/images/mnogolet-02.webp"
+    },
+    {
+      "id": "111",
+      "categoryId": 7,
+      "name": "Флокс Брайт Айз",
+      "price": "6.49",
+      "height": 88,
+      "image": "/images/mnogolet-03.webp"
+    },
+    {
+      "id": "112",
+      "categoryId": 7,
+      "name": "Флокс Классик Классис",
+      "price": "6.49",
+      "height": 86,
+      "image": "/images/mnogolet-04.webp"
+    },
+    {
+      "id": "113",
+      "categoryId": 7,
+      "name": "Лилейник Бонанза",
+      "price": "6.99",
+      "height": 90,
+      "image": "/images/mnogolet-05.webp"
+    },
+    {
+      "id": "114",
+      "categoryId": 7,
+      "name": "Лилейник Стелла де Оро",
+      "price": "6.99",
+      "height": 88,
+      "image": "/images/mnogolet-06.webp"
+    },
+    {
+      "id": "115",
+      "categoryId": 7,
+      "name": "Флокс Зе Кинг",
+      "price": "6.99",
+      "height": 92,
+      "image": "/images/mnogolet-07.webp"
+    },
+    {
+      "id": "116",
+      "categoryId": 7,
+      "name": "Хоста Альбомаргината",
+      "price": "7.49",
+      "height": 70,
+      "image": "/images/mnogolet-08.webp"
+    },
+    {
+      "id": "117",
+      "categoryId": 7,
+      "name": "Астра Феллоушип",
+      "price": "7.49",
+      "height": 95,
+      "image": "/images/mnogolet-09.webp"
+    },
+    {
+      "id": "118",
+      "categoryId": 7,
+      "name": "Хоста Антиох",
+      "price": "7.49",
+      "height": 72,
+      "image": "/images/mnogolet-10.webp"
+    },
+    {
+      "id": "119",
+      "categoryId": 7,
+      "name": "Хоста Голд Стандарт",
+      "price": "7.99",
+      "height": 75,
+      "image": "/images/mnogolet-11.webp"
+    },
+    {
+      "id": "120",
+      "categoryId": 7,
+      "name": "Хоста Хальцион",
+      "price": "7.99",
+      "height": 74,
+      "image": "/images/mnogolet-12.webp"
+    },
+    {
+      "id": "121",
+      "categoryId": 7,
+      "name": "Хризантема Брансаунд",
+      "price": "7.99",
+      "height": 98,
+      "image": "/images/mnogolet-13.webp"
+    },
+    {
+      "id": "122",
+      "categoryId": 7,
+      "name": "Хризантема Трикки Уайт",
+      "price": "8.49",
+      "height": 100,
+      "image": "/images/mnogolet-14.webp"
+    },
+    {
+      "id": "123",
+      "categoryId": 7,
+      "name": "Астильба Вероника Клоуз",
+      "price": "8.49",
+      "height": 92,
+      "image": "/images/mnogolet-15.webp"
+    },
+    {
+      "id": "124",
+      "categoryId": 7,
+      "name": "Астильба Перпл",
+      "price": "8.49",
+      "height": 90,
+      "image": "/images/mnogolet-16.webp"
+    },
+    {
+      "id": "125",
+      "categoryId": 7,
+      "name": "Лилейник Луиза Манелис",
+      "price": "8.99",
+      "height": 94,
+      "image": "/images/mnogolet-17.webp"
+    },
+    {
+      "id": "126",
+      "categoryId": 7,
+      "name": "Лилейник Найт Беакон",
+      "price": "8.99",
+      "height": 96,
+      "image": "/images/mnogolet-18.webp"
+    },
+    {
+      "id": "127",
+      "categoryId": 8,
+      "name": "Туя Европа Голд",
+      "price": "8.99",
+      "height": 150,
+      "image": "/images/elki-01.webp"
+    },
+    {
+      "id": "128",
+      "categoryId": 8,
+      "name": "Туя Брабант",
+      "price": "14.99",
+      "height": 200,
+      "image": "/images/elki-02.webp"
+    },
+    {
+      "id": "129",
+      "categoryId": 8,
+      "name": "Туя Даника",
+      "price": "14.99",
+      "height": 120,
+      "image": "/images/elki-03.webp"
+    },
+    {
+      "id": "130",
+      "categoryId": 8,
+      "name": "Туя Смарагд",
+      "price": "15.99",
+      "height": 180,
+      "image": "/images/elki-04.webp"
+    },
+    {
+      "id": "131",
+      "categoryId": 8,
+      "name": "Купрессоципарис Кастлевеллан",
+      "price": "15.99",
+      "height": 220,
+      "image": "/images/elki-05.webp"
+    },
+    {
+      "id": "132",
+      "categoryId": 8,
+      "name": "Туя Тини Тим",
+      "price": "15.99",
+      "height": 80,
+      "image": "/images/elki-06.webp"
+    },
+    {
+      "id": "133",
+      "categoryId": 8,
+      "name": "Ель Глаука Маджестик Блю",
+      "price": "15.99",
+      "height": 250,
+      "image": "/images/elki-07.webp"
+    },
+    {
+      "id": "134",
+      "categoryId": 8,
+      "name": "Ель Кейбаб",
+      "price": "16.49",
+      "height": 240,
+      "image": "/images/elki-08.webp"
+    },
+    {
+      "id": "135",
+      "categoryId": 8,
+      "name": "Ель Коника",
+      "price": "16.49",
+      "height": 100,
+      "image": "/images/elki-09.webp"
+    },
+    {
+      "id": "136",
+      "categoryId": 8,
+      "name": "Можжевельник Арнольд",
+      "price": "16.99",
+      "height": 130,
+      "image": "/images/elki-10.webp"
+    },
+    {
+      "id": "137",
+      "categoryId": 8,
+      "name": "Сосна Пумилио",
+      "price": "17.49",
+      "height": 90,
+      "image": "/images/elki-11.webp"
+    },
+    {
+      "id": "138",
+      "categoryId": 8,
+      "name": "Можжевельник Дрим Джой",
+      "price": "17.49",
+      "height": 110,
+      "image": "/images/elki-12.webp"
+    },
+    {
+      "id": "139",
+      "categoryId": 8,
+      "name": "Можжевельник Сайрокет",
+      "price": "17.49",
+      "height": 140,
+      "image": "/images/elki-13.webp"
+    },
+    {
+      "id": "140",
+      "categoryId": 8,
+      "name": "Тис Хикси",
+      "price": "17.99",
+      "height": 120,
+      "image": "/images/elki-14.webp"
+    },
+    {
+      "id": "141",
+      "categoryId": 8,
+      "name": "Сосна Мугус",
+      "price": "17.99",
+      "height": 95,
+      "image": "/images/elki-15.webp"
+    },
+    {
+      "id": "142",
+      "categoryId": 8,
+      "name": "Туя западная Даника Голд",
+      "price": "17.99",
+      "height": 125,
+      "image": "/images/elki-16.webp"
+    },
+    {
+      "id": "143",
+      "categoryId": 8,
+      "name": "Сосна кедровая сибирская",
+      "price": "17.99",
+      "height": 300,
+      "image": "/images/elki-17.webp"
+    },
+    {
+      "id": "144",
+      "categoryId": 8,
+      "name": "Ель Сан он зе Скай",
+      "price": "18.49",
+      "height": 110,
+      "image": "/images/elki-18.webp"
+    },
+    {
+      "id": "145",
+      "categoryId": 9,
+      "name": "Защита комплексная 30мл",
+      "price": "2.49",
+      "height": 15,
+      "image": "/images/biopreparat-01.webp"
+    },
+    {
+      "id": "146",
+      "categoryId": 9,
+      "name": "Защита почвы 30мл",
+      "price": "2.49",
+      "height": 15,
+      "image": "/images/biopreparat-02.webp"
+    },
+    {
+      "id": "147",
+      "categoryId": 9,
+      "name": "Здоровье флоры 30мл",
+      "price": "2.49",
+      "height": 15,
+      "image": "/images/biopreparat-03.webp"
+    },
+    {
+      "id": "148",
+      "categoryId": 9,
+      "name": "Природная защита 30мл",
+      "price": "2.49",
+      "height": 15,
+      "image": "/images/biopreparat-04.webp"
+    },
+    {
+      "id": "149",
+      "categoryId": 9,
+      "name": "Энергия роста 30мл",
+      "price": "2.49",
+      "height": 15,
+      "image": "/images/biopreparat-05.webp"
+    },
+    {
+      "id": "150",
+      "categoryId": 9,
+      "name": "Биостимулятор роста универсальный Aqua 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-06.webp"
+    },
+    {
+      "id": "151",
+      "categoryId": 9,
+      "name": "Защита комплексна Aqua 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-07.webp"
+    },
+    {
+      "id": "152",
+      "categoryId": 9,
+      "name": "Природная защита Aqua 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-08.webp"
+    },
+    {
+      "id": "153",
+      "categoryId": 9,
+      "name": "Энергия роста Aqua 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-09.webp"
+    },
+    {
+      "id": "154",
+      "categoryId": 9,
+      "name": "Здоровье и красота комнатных растений Aqua 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-10.webp"
+    },
+    {
+      "id": "155",
+      "categoryId": 9,
+      "name": "Растим овощи",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-11.webp"
+    },
+    {
+      "id": "156",
+      "categoryId": 9,
+      "name": "Растим плоды",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-12.webp"
+    },
+    {
+      "id": "157",
+      "categoryId": 9,
+      "name": "Растим рассаду 0.2л",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-13.webp"
+    },
+    {
+      "id": "158",
+      "categoryId": 9,
+      "name": "Растим сад",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-14.webp"
+    },
+    {
+      "id": "159",
+      "categoryId": 9,
+      "name": "Растим цветы",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-15.webp"
+    },
+    {
+      "id": "160",
+      "categoryId": 9,
+      "name": "Растим ягоды",
+      "price": "8.99",
+      "height": 25,
+      "image": "/images/biopreparat-16.webp"
+    },
+    {
+      "id": "161",
+      "categoryId": 9,
+      "name": "Защита комплексная 0.25л",
+      "price": "8.99",
+      "height": 30,
+      "image": "/images/biopreparat-17.webp"
+    },
+    {
+      "id": "162",
+      "categoryId": 9,
+      "name": "Защита почвы 0.25л",
+      "price": "8.99",
+      "height": 30,
+      "image": "/images/biopreparat-18.webp"
+    },
+    {
+      "id": "163",
+      "categoryId": 10,
+      "name": "Гладиолус Рикс Фриззл",
+      "price": "2.49",
+      "height": 114,
+      "image": "/images/gladioulus-01.webp"
+    },
+    {
+      "id": "164",
+      "categoryId": 10,
+      "name": "Гладиолус Могикан",
+      "price": "2.99",
+      "height": 118,
+      "image": "/images/gladioulus-02.webp"
+    },
+    {
+      "id": "165",
+      "categoryId": 10,
+      "name": "Гладиолус Норма Джин",
+      "price": "2.99",
+      "height": 116,
+      "image": "/images/gladioulus-03.webp"
+    },
+    {
+      "id": "166",
+      "categoryId": 10,
+      "name": "Гладиолус Агатовые бусы",
+      "price": "4.99",
+      "height": 120,
+      "image": "/images/gladioulus-04.webp"
+    },
+    {
+      "id": "167",
+      "categoryId": 10,
+      "name": "Гладиолус Аксакал",
+      "price": "5.49",
+      "height": 112,
+      "image": "/images/gladioulus-05.webp"
+    },
+    {
+      "id": "168",
+      "categoryId": 10,
+      "name": "Гладиолус Аннушка",
+      "price": "5.49",
+      "height": 110,
+      "image": "/images/gladioulus-06.webp"
+    },
+    {
+      "id": "169",
+      "categoryId": 10,
+      "name": "Гладиолус Апельсиновый мираж",
+      "price": "5.99",
+      "height": 118,
+      "image": "/images/gladioulus-07.webp"
+    },
+    {
+      "id": "170",
+      "categoryId": 10,
+      "name": "Гладиолус Апостол Петр",
+      "price": "5.99",
+      "height": 116,
+      "image": "/images/gladioulus-08.webp"
+    },
+    {
+      "id": "171",
+      "categoryId": 10,
+      "name": "Гладиолус Аякс",
+      "price": "5.99",
+      "height": 114,
+      "image": "/images/gladioulus-09.webp"
+    },
+    {
+      "id": "172",
+      "categoryId": 10,
+      "name": "Гладиолус Барбизон",
+      "price": "5.99",
+      "height": 112,
+      "image": "/images/gladioulus-10.webp"
+    },
+    {
+      "id": "173",
+      "categoryId": 10,
+      "name": "Гладиолус Белый Волшебник",
+      "price": "5.99",
+      "height": 110,
+      "image": "/images/gladioulus-11.webp"
+    },
+    {
+      "id": "174",
+      "categoryId": 10,
+      "name": "Гладиолус Белый медведь",
+      "price": "5.99",
+      "height": 118,
+      "image": "/images/gladioulus-12.webp"
+    },
+    {
+      "id": "175",
+      "categoryId": 10,
+      "name": "Гладиолус Божественная серенада",
+      "price": "5.99",
+      "height": 116,
+      "image": "/images/gladioulus-13.webp"
+    },
+    {
+      "id": "176",
+      "categoryId": 10,
+      "name": "Гладиолус Варьете",
+      "price": "6.49",
+      "height": 120,
+      "image": "/images/gladioulus-14.webp"
+    },
+    {
+      "id": "177",
+      "categoryId": 10,
+      "name": "Гладиолус Вечерний Сочи",
+      "price": "6.49",
+      "height": 114,
+      "image": "/images/gladioulus-15.webp"
+    },
+    {
+      "id": "178",
+      "categoryId": 10,
+      "name": "Гладиолус Вечерняя сирень",
+      "price": "6.49",
+      "height": 112,
+      "image": "/images/gladioulus-16.webp"
+    },
+    {
+      "id": "179",
+      "categoryId": 10,
+      "name": "Гладиолус Врата рая",
+      "price": "6.99",
+      "height": 118,
+      "image": "/images/gladioulus-17.webp"
+    },
+    {
+      "id": "180",
+      "categoryId": 10,
+      "name": "Гдадиолус Демон",
+      "price": "7.49",
+      "height": 120,
+      "image": "/images/gladioulus-18.webp"
+    },
+    {
+      "id": "181",
+      "categoryId": 11,
+      "name": "Клюква Станкович Р9",
+      "price": "8.99",
+      "height": 40,
+      "image": "/images/yagodi-01.webp"
+    },
+    {
+      "id": "182",
+      "categoryId": 11,
+      "name": "Голубика Нельсон Р9",
+      "price": "9.99",
+      "height": 100,
+      "image": "/images/yagodi-02.webp"
+    },
+    {
+      "id": "183",
+      "categoryId": 11,
+      "name": "Голубика Осорно Р9",
+      "price": "9.99",
+      "height": 95,
+      "image": "/images/yagodi-03.webp"
+    },
+    {
+      "id": "184",
+      "categoryId": 11,
+      "name": "Клюква Бен Лир Р9",
+      "price": "9.99",
+      "height": 45,
+      "image": "/images/yagodi-04.webp"
+    },
+    {
+      "id": "185",
+      "categoryId": 11,
+      "name": "Клюква Пилигрим Р9",
+      "price": "9.99",
+      "height": 42,
+      "image": "/images/yagodi-05.webp"
+    },
+    {
+      "id": "186",
+      "categoryId": 11,
+      "name": "Клюква Стивенс Р9",
+      "price": "12.99",
+      "height": 50,
+      "image": "/images/yagodi-06.webp"
+    },
+    {
+      "id": "187",
+      "categoryId": 11,
+      "name": "Голубик Блю Голд К1,5",
+      "price": "12.99",
+      "height": 90,
+      "image": "/images/yagodi-07.webp"
+    },
+    {
+      "id": "188",
+      "categoryId": 11,
+      "name": "Голубика Бригитта Блю К1,5",
+      "price": "12.99",
+      "height": 92,
+      "image": "/images/yagodi-08.webp"
+    },
+    {
+      "id": "189",
+      "categoryId": 11,
+      "name": "Голубика Голд Траубе К1,5",
+      "price": "12.99",
+      "height": 88,
+      "image": "/images/yagodi-09.webp"
+    },
+    {
+      "id": "190",
+      "categoryId": 11,
+      "name": "Голубика Денис Блю К1,5",
+      "price": "12.99",
+      "height": 94,
+      "image": "/images/yagodi-10.webp"
+    },
+    {
+      "id": "191",
+      "categoryId": 11,
+      "name": "Голубика Либерти К1,5",
+      "price": "13.99",
+      "height": 96,
+      "image": "/images/yagodi-11.webp"
+    },
+    {
+      "id": "192",
+      "categoryId": 11,
+      "name": "Голубика Спартан К1,5",
+      "price": "13.99",
+      "height": 98,
+      "image": "/images/yagodi-12.webp"
+    },
+    {
+      "id": "193",
+      "categoryId": 11,
+      "name": "Ежевика Коламбия Гигант Р9",
+      "price": "13.99",
+      "height": 150,
+      "image": "/images/yagodi-13.webp"
+    },
+    {
+      "id": "194",
+      "categoryId": 11,
+      "name": "Ежевика Натчез Р9",
+      "price": "13.99",
+      "height": 145,
+      "image": "/images/yagodi-14.webp"
+    },
+    {
+      "id": "195",
+      "categoryId": 11,
+      "name": "Ежевика Небеса Р9",
+      "price": "14.49",
+      "height": 155,
+      "image": "/images/yagodi-15.webp"
+    },
+    {
+      "id": "196",
+      "categoryId": 11,
+      "name": "Ежевика Трипл Краун Р9",
+      "price": "14.49",
+      "height": 160,
+      "image": "/images/yagodi-16.webp"
+    },
+    {
+      "id": "197",
+      "categoryId": 11,
+      "name": "Жимолость Войтек С2",
+      "price": "14.49",
+      "height": 120,
+      "image": "/images/yagodi-17.webp"
+    },
+    {
+      "id": "198",
+      "categoryId": 11,
+      "name": "Голубика Блюджей",
+      "price": "14.99",
+      "height": 100,
+      "image": "/images/yagodi-18.webp"
+    },
+    {
+      "id": "199",
+      "categoryId": 12,
+      "name": "Клематис Аленушка",
+      "price": "29.99",
+      "height": 250,
+      "image": "/images/klematis-01.webp"
+    },
+    {
+      "id": "200",
+      "categoryId": 12,
+      "name": "Клематис Варшавска Найк",
+      "price": "29.99",
+      "height": 240,
+      "image": "/images/klematis-02.webp"
+    },
+    {
+      "id": "201",
+      "categoryId": 12,
+      "name": "Клематис Голубой Ангел",
+      "price": "29.99",
+      "height": 230,
+      "image": "/images/klematis-03.webp"
+    },
+    {
+      "id": "202",
+      "categoryId": 12,
+      "name": "Клематис Йеллоу Куин",
+      "price": "29.99",
+      "height": 220,
+      "image": "/images/klematis-04.webp"
+    },
+    {
+      "id": "203",
+      "categoryId": 12,
+      "name": "Клематис Маньчжурский",
+      "price": "29.99",
+      "height": 200,
+      "image": "/images/klematis-05.webp"
+    },
+    {
+      "id": "204",
+      "categoryId": 12,
+      "name": "Клематис Мульти Блю",
+      "price": "32.99",
+      "height": 260,
+      "image": "/images/klematis-06.webp"
+    },
+    {
+      "id": "205",
+      "categoryId": 12,
+      "name": "Клематис Нелли Мозер",
+      "price": "32.99",
+      "height": 250,
+      "image": "/images/klematis-07.webp"
+    },
+    {
+      "id": "206",
+      "categoryId": 12,
+      "name": "Клематис Пантер",
+      "price": "32.99",
+      "height": 240,
+      "image": "/images/klematis-08.webp"
+    },
+    {
+      "id": "207",
+      "categoryId": 12,
+      "name": "Клематис Перида",
+      "price": "33.99",
+      "height": 270,
+      "image": "/images/klematis-09.webp"
+    },
+    {
+      "id": "208",
+      "categoryId": 12,
+      "name": "Клематис Славянка",
+      "price": "33.99",
+      "height": 260,
+      "image": "/images/klematis-10.webp"
+    },
+    {
+      "id": "209",
+      "categoryId": 12,
+      "name": "Клематис Солидарность",
+      "price": "33.99",
+      "height": 250,
+      "image": "/images/klematis-11.webp"
+    },
+    {
+      "id": "210",
+      "categoryId": 12,
+      "name": "Клематис Стефан Франчак",
+      "price": "33.99",
+      "height": 240,
+      "image": "/images/klematis-12.webp"
+    },
+    {
+      "id": "211",
+      "categoryId": 12,
+      "name": "Клематис Халина Нолл",
+      "price": "33.99",
+      "height": 230,
+      "image": "/images/klematis-13.webp"
+    },
+    {
+      "id": "212",
+      "categoryId": 12,
+      "name": "Клематис Чейндж оф Харт",
+      "price": "34.99",
+      "height": 280,
+      "image": "/images/klematis-14.webp"
+    },
+    {
+      "id": "213",
+      "categoryId": 12,
+      "name": "Клематис Сансет",
+      "price": "34.99",
+      "height": 270,
+      "image": "/images/klematis-15.webp"
+    },
+    {
+      "id": "214",
+      "categoryId": 12,
+      "name": "Клематис Вайлдфаер",
+      "price": "34.99",
+      "height": 260,
+      "image": "/images/klematis-16.webp"
+    },
+    {
+      "id": "215",
+      "categoryId": 12,
+      "name": "Клематис Президент",
+      "price": "34.99",
+      "height": 250,
+      "image": "/images/klematis-17.webp"
+    },
+    {
+      "id": "216",
+      "categoryId": 12,
+      "name": "Клематис Ашва",
+      "price": "34.99",
+      "height": 240,
+      "image": "/images/klematis-18.webp"
+    }
   ],
   "cart": []
 }

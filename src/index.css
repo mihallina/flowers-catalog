@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
 :root{
     --border-green: #3b673e;
+    --border-green-hover: rgb(118, 198, 122);
     --bg-green: #cfefd1;
+    --bg-green-hover: #a4eca9;
     --bg-orange: #fff7f0;
 }
 
@@ -12,6 +16,11 @@
 
 body{
     background-color: var(--bg-orange);
+    font-family: "Nunito", sans-serif;
+}
+
+button{
+    font-family: "Nunito", sans-serif;
 }
 
 .container{

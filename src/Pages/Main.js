@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
-import {Header} from '../components/Header';
-import NewCategorys from '../components/NewCategorys';
+import NewCategorys from '../components/main/NewCategorys';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import {fetchProducts} from "../redux/productsActions";
+import Layout from '../components/layout/Layout';
+import PopularCategorys from '../components/main/PopularCategorys';
+import PopularProducts from '../components/main/PopularProducts';
 
 function Main() {
   const dispatch = useAppDispatch();
@@ -15,10 +17,13 @@ function Main() {
   }, [dispatch, status])
 
   return (
-    <div>
-        <Header />
-        <NewCategorys />
-    </div>
+    <>
+        <Layout>
+          <NewCategorys />
+          <PopularCategorys />
+          <PopularProducts />
+        </Layout>
+    </>
   );
 }
 

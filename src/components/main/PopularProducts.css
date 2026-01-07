@@ -1,0 +1,15 @@
+.popularProducts{
+    color: var(--border-green);
+    margin-bottom: 50px;
+}
+
+.popularProducts h1{
+    font-size: 40px;
+}
+
+.popularProducts-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}

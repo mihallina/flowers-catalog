@@ -2,16 +2,17 @@
 //ассортиментом этой категории. при наведение мышкой - свечение
 import React from "react";
 import "./NewCategory.css";
+import { Link } from "react-router-dom";
 
-const NewCategory = ({ url, text }) => {
+const NewCategory = ({ url, text, slug }) => {
   return (
-    <a href="#" className="newCategory-link">
+    <Link to={`/category/${slug}`} className="newCategory-link">
       <div className="newCategory-block">
         <div className="band">Новинки</div>
         <img className="newCategory-img" src={url} alt={text} loading="lazy" />
       </div>
       <div className="newCategory-text">{text}</div>
-    </a>
+    </Link>
   );
 };
 
