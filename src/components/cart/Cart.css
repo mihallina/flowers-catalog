@@ -61,6 +61,10 @@
     border-radius: 8px;
 }
 
+.cart-item-info{
+    width: 80%;
+}
+
 .cart-quantity {
     display: flex;
     align-items: center;
@@ -90,7 +94,7 @@
 }
 
 .remove-btn {
-    width: 35px;
+    width: 45px;
     padding: 3px;
     border-radius: 8px;
     display: flex;

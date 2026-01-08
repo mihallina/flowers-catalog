@@ -1,0 +1,23 @@
+[33mcommit 4011150859c5b8a3278d71ed49ff0b228816107f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Minalina Pukhart <mishapukhart@gmail.com>
+Date:   Thu Jan 8 12:22:12 2026 +0300
+
+    porduction is working
+
+[33mcommit fe8cc60c21f52d52f1d14e60d3ecc104b82d5519[m
+Author: Minalina Pukhart <mishapukhart@gmail.com>
+Date:   Wed Jan 7 15:42:00 2026 +0300
+
+    everything without adaptability
+
+[33mcommit 20b015a397212c63962a28a4c7f8356bb28dcf88[m
+Author: Minalina Pukhart <mishapukhart@gmail.com>
+Date:   Thu Jan 1 19:47:53 2026 +0300
+
+    NewCategories
+
+[33mcommit 706f20e7b4f603aa727554ecbfb751b295907542[m
+Author: Minalina Pukhart <mishapukhart@gmail.com>
+Date:   Thu Dec 25 20:26:51 2025 +0300
+
+    Initialize project using Create React App
