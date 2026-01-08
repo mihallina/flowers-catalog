@@ -6,8 +6,6 @@ import {
   removeCartItem,
   updateCartItem,
 } from "../../redux/cartActions";
-import emptyCart from "../../images/emptycart.png";
-import trash from "../../images/trash.svg";
 
 const Cart = () => {
   const dispatch = useAppDispatch();
@@ -20,7 +18,7 @@ const Cart = () => {
   if (status === "succeeded" && items.length === 0) {
     return (
       <div className="container cart-empty">
-        <img src={emptyCart} alt="Пустая корзина" />
+        <img src='/images/emptycart.png' alt="Пустая корзина" />
         <h1>В корзине пока пусто</h1>
         <a className="cart-empty-btn" href="/">
           Перейти на главную
@@ -90,7 +88,7 @@ const Cart = () => {
                   className="remove-btn"
                   onClick={() => dispatch(removeCartItem(item.id))}
                 >
-                  <img src={trash} alt="" />
+                  <img src='/images/trash.svg' alt="" />
                 </button>
             </div>
           ))}

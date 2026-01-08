@@ -1,11 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import youtube from '../../images/youtube.svg'
-import facebook from '../../images/facebook.svg'
-import instagram from '../../images/instagram.svg'
-import odnoklasniki from '../../images/odnoklasniki.svg'
-import tiktok from '../../images/tiktok.svg'
-import vk from '../../images/vk.svg'
 
 const Footer = () => {
   return (
@@ -29,12 +23,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-socialMedia">
-            <a href=""><img src={youtube} alt="youtube" /></a>
-            <a href=""><img src={facebook} alt="facebook" /></a>
-            <a href=""><img src={instagram} alt="instagram" /></a>
-            <a href=""><img src={odnoklasniki} alt="odnoklasniki" /></a>
-            <a href=""><img src={tiktok} alt="tiktok" /></a>
-            <a href=""><img src={vk} alt="vk" /></a>
+            <a href=""><img src='/images/youtube.svg' alt="youtube" /></a>
+            <a href=""><img src='/images/facebook.svg' alt="facebook" /></a>
+            <a href=""><img src='/images/instagram.svg' alt="instagram" /></a>
+            <a href=""><img src='/images/odnoklasniki.svg' alt="odnoklasniki" /></a>
+            <a href=""><img src='/images/tiktok.svg' alt="tiktok" /></a>
+            <a href=""><img src='/images/vk.svg' alt="vk" /></a>
         </div>
       </div>
     </footer>

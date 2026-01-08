@@ -4,7 +4,10 @@
     background-color: var(--bg-green);
     padding: 15px 0;
     position: fixed;
-    top: 0;left: 0; right: 0; z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .header-container{
@@ -53,7 +56,11 @@
 
 .header-imgs{
     display: flex;
-    gap: 15px;
+    gap: 25px;
+}
+
+.phone-icon-wrapper{
+    cursor: pointer;
 }
 
 .phone-info{

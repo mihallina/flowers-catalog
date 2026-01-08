@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
-import basket from "../../images/basket.png";
-import phone from "../../images/phone.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -40,7 +38,7 @@ const Header = () => {
             Каталог
           </Link>
         </div>
-        <input className="search-inp" type="text" placeholder="Искать" />
+        {/* <input className="search-inp" type="text" placeholder="Искать" /> */}
         <div className="header-imgs">
           <div
             ref={phoneIconRef}
@@ -50,7 +48,7 @@ const Header = () => {
               setIsPhoneInfoOpen(!isPhoneInfoOpen);
             }}
           >
-            <img className="phone-img" src={phone} alt="" />
+            <img className="phone-img" src='/images/phone.png' alt="" />
           </div>
           {isPhoneInfoOpen && (
             <div className="phone-info" ref={phoneInfoRef}>
@@ -63,7 +61,7 @@ const Header = () => {
             </div>
           )}
           <Link to='/cart'>
-            <img className="basket-img" src={basket} alt="" />
+            <img className="basket-img" src='/images/basket.png' alt="" />
           </Link>
         </div>
       </div>
