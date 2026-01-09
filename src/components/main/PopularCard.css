@@ -23,3 +23,11 @@
 .popularCard:hover .popularCard-img {
     transform: scale(0.95);
 }
+
+@media(max-width: 430px) {
+    .popularCard-name{
+        font-size: 18px;
+    }
+
+    
+}

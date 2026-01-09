@@ -1,5 +1,6 @@
 .cart {
     margin-top: 100px;
+    margin-bottom: 50px;
     color: var(--border-green)
 }
 
@@ -16,7 +17,6 @@
 .cart-empty h1 {
     font-size: 28px;
     margin-bottom: 16px;
-
 }
 
 .cart-empty-btn {
@@ -28,11 +28,15 @@
     border-radius: 8px;
 }
 
-.cart-empty-btn:hover{
+.cart-empty-btn:hover {
     background-color: var(--border-green-hover);
 }
 
-.cart-wrapper{
+.cart h1 {
+    margin-bottom: 15px;
+}
+
+.cart-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -61,7 +65,7 @@
     border-radius: 8px;
 }
 
-.cart-item-info{
+.cart-item-info {
     width: 80%;
 }
 
@@ -105,24 +109,24 @@
     cursor: pointer;
 }
 
-.remove-btn:hover{
+.remove-btn:hover {
     background-color: var(--bg-green);
 }
 
-.remove-btn img{
+.remove-btn img {
     width: 100%;
 }
 
 .cart-total {
     background-color: var(--bg-green);
-    width: 300px;
+    width: max-content;
     padding: 20px;
     border-radius: 8px;
     height: max-content;
 }
 
-.cart-order-btn{
-    margin-top: 15px;
+.cart-order-btn {
+    margin-top: 10px;
     padding: 10px 25px;
     font-size: 18px;
     background-color: var(--border-green);
@@ -130,4 +134,77 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+@media(max-width: 430px) {
+    .cart-empty img {
+        width: 200px;
+    }
+
+    .cart-empty h1 {
+        font-size: 23px;
+    }
+
+    .cart-empty-btn {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 941px) {
+    .cart-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-items {
+        margin-bottom: 0;
+    }
+
+    .cart-total {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .cart-order-btn {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 575px){
+    .cart-item-info h2{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 543px){
+    .cart-total {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 426px){
+    .cart-total {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .cart-item-info h2{
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .quantity-btn{
+        width: 25px;
+        height: 25px;
+        font-size: 17px;
+    }
+
+    .cart-item-info p{
+        font-size: 14px;
+    }
 }

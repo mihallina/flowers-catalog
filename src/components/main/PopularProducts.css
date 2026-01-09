@@ -13,3 +13,9 @@
     gap: 20px;
     margin-top: 20px;
 }
+
+@media(max-width: 426px){
+    .popularProducts-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

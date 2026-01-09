@@ -1,12 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { fetchProducts } from "../../redux/productsActions";
 import ProductCard from "../categoryPage/ProductCard";
 import "./ProductInfo.css";
 import { addToCart } from "../../redux/cartActions";
+import Notification from "../cart/Notification";
 
 const ProductInfo = () => {
+  const [notifVisible, setNotifVisible] = useState(false);
   const { id } = useParams();
   const dispatch = useAppDispatch();
   const { categories, products, status } = useAppSelector(
@@ -33,6 +35,11 @@ const ProductInfo = () => {
 
   const handleAddToCart = () => {
     dispatch(addToCart(product));
+    setNotifVisible(true);
+  };
+
+  const handleNotifClose = () => {
+    setNotifVisible(false);
   };
 
   if (!product) {
@@ -85,6 +92,11 @@ const ProductInfo = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
+      <Notification
+        message="Товар добавлен в корзину"
+        isVisible={notifVisible}
+        onClose={handleNotifClose}
+      />
     </div>
   );
 };

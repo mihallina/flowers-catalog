@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
-.Header{
+.Header {
     background-color: var(--bg-green);
     padding: 15px 0;
     position: fixed;
@@ -10,22 +10,22 @@
     z-index: 10;
 }
 
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-links{
+.header-links {
     display: flex;
     gap: 65px;
 }
 
-.header-link{
+.header-link {
     text-decoration: none;
 }
 
-.header-catalog{
+.header-catalog {
     text-decoration: none;
     background-color: var(--border-green);
     padding: 10px 20px;
@@ -35,45 +35,102 @@
     font-weight: 700;
 }
 
-.logo{
+.logo {
     font-size: 50px;
     font-family: "Fleur De Leah", cursive;
     line-height: 38px;
     color: var(--border-green)
 }
 
-.search-inp{
+.search-inp {
     width: 750px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--border-green);
 }
 
-.header-imgs img{
+.header-imgs img {
     width: 35px;
     color: var(--border-green);
 }
 
-.header-imgs{
+.header-imgs {
     display: flex;
     gap: 25px;
 }
 
-.phone-icon-wrapper{
+.phone-icon-wrapper {
     cursor: pointer;
+    position: relative;
 }
 
-.phone-info{
+.phone-info {
     width: 215px;
     padding: 20px;
     background-color: var(--bg-green-hover);
     position: absolute;
-    right: 107px;
-    top: 67px;
+    top: 70px;
+    right: 450px;
     z-index: 1000;
     box-shadow: 0 4px 12px #00000026;
-
-    
     transform: translateY(-10px);
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+@media(max-width: 2070px){
+    .phone-info{
+        right: 220px
+    }
+}
+
+@media(max-width: 1655px){
+    .phone-info{
+        right: 100px
+    }
+}
+
+@media(max-width: 1655px){
+    .phone-info{
+        right: 70px
+    }
+}
+
+@media(max-width: 426px) {
+    .header-links {
+        gap: 50px;
+    }
+
+    .phone-info{
+        right: 40px;
+    }
+}
+
+@media(max-width: 376px) {
+    .header-catalog {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .header-links {
+        gap: 35px;
+    }
+
+    .header-imgs{
+        gap: 10px;
+    }
+}
+
+@media(max-width: 321px){
+    .logo{
+        font-size: 35px;
+    }
+
+    .header-links {
+        gap: 25px;
+    }
+
+    .header-catalog {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
 }

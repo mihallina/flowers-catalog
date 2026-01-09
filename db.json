@@ -1803,5 +1803,70 @@
       "image": "/images/klematis-18.webp"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "4e19",
+      "productId": "59",
+      "name": "Гладиолус Лас Вегас",
+      "price": "2.49",
+      "image": "/images/lukovich-05.webp",
+      "quantity": 13
+    },
+    {
+      "id": "4753",
+      "productId": "150",
+      "name": "Биостимулятор роста универсальный Aqua 0.2л",
+      "price": "8.99",
+      "image": "/images/biopreparat-06.webp",
+      "quantity": 2
+    },
+    {
+      "id": "3e99",
+      "productId": "2",
+      "name": "Роза Психея",
+      "price": "27.99",
+      "image": "/images/rose-02.webp",
+      "quantity": 1
+    },
+    {
+      "id": "1edd",
+      "productId": "3",
+      "name": "Роза Корал Желе",
+      "price": "25.99",
+      "image": "/images/rose-03.webp",
+      "quantity": 1
+    },
+    {
+      "id": "cb25",
+      "productId": "8",
+      "name": "Роза Блю Мун Стоун",
+      "price": "24.99",
+      "image": "/images/rose-08.webp",
+      "quantity": 1
+    },
+    {
+      "id": "494a",
+      "productId": "110",
+      "name": "Флокс Фортуна",
+      "price": "5.49",
+      "image": "/images/mnogolet-02.webp",
+      "quantity": 2
+    },
+    {
+      "id": "4105",
+      "productId": "63",
+      "name": "Ирис Симфони",
+      "price": "2.99",
+      "image": "/images/lukovich-09.webp",
+      "quantity": 1
+    },
+    {
+      "id": "8b5c",
+      "productId": "57",
+      "name": "Гладиолус Присцилла",
+      "price": "1.99",
+      "image": "/images/lukovich-03.webp",
+      "quantity": 1
+    }
+  ]
 }

@@ -27,3 +27,9 @@ button{
     max-width: 1400px;
     margin: 0 auto;
 }
+
+@media (max-width: 1410px) {
+    .container{
+        max-width: 95%;
+    }
+}

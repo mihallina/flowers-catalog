@@ -1,20 +1,20 @@
-.popularCategorys{
+.popularCategorys {
     margin-bottom: 50px;
     color: var(--border-green)
 }
 
-.popularCategorys-wrapper{
+.popularCategorys-wrapper {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
 }
 
-.popularCategorys-title{
+.popularCategorys-title {
     font-size: 40px;
 }
 
-.popularCard-all{
+.popularCard-all {
     width: 100%;
     border-radius: 20px;
     background-color: var(--bg-green);
@@ -28,6 +28,18 @@
     font-weight: 600;
 }
 
-.popularCard-all:hover{
+.popularCard-all:hover {
     background-color: var(--bg-green-hover);
+}
+
+@media(max-width: 690px) {
+    .popularCategorys-wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+
+@media(max-width: 430px){
+    .popularCard-all{
+        font-size: 18px;
+    }
 }

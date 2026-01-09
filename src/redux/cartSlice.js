@@ -5,7 +5,6 @@ import {
   updateCartItem,
   removeCartItem,
 } from "./cartActions";
-import { act } from "react";
 
 const initialState = {
   items: [],
@@ -42,7 +41,12 @@ const cartSlice = createSlice({
       })
       .addCase(addToCart.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.items.push(action.payload);
+        const exists = state.items.some(
+          (item) => item.id === action.payload.id
+        );
+        if (!exists) {
+          state.items.push(action.payload);
+        }
       })
       .addCase(addToCart.rejected, (state, action) => {
         state.status = "failed";
@@ -58,9 +62,7 @@ const cartSlice = createSlice({
         }
       })
       .addCase(removeCartItem.fulfilled, (state, action) => {
-        state.items = state.items.filter(
-          (item) => item.id !== action.payload
-        );
+        state.items = state.items.filter((item) => item.id !== action.payload);
       });
   },
 });

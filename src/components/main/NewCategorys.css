@@ -1,6 +1,9 @@
 .newCategorys{
     margin-top: 100px;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 30px;
 }

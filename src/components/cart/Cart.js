@@ -18,7 +18,7 @@ const Cart = () => {
   if (status === "succeeded" && items.length === 0) {
     return (
       <div className="container cart-empty">
-        <img src='/images/emptycart.png' alt="Пустая корзина" />
+        <img src="/images/emptycart.png" alt="Пустая корзина" />
         <h1>В корзине пока пусто</h1>
         <a className="cart-empty-btn" href="/">
           Перейти на главную
@@ -39,9 +39,11 @@ const Cart = () => {
     );
   }
 
+  const itemsQuantity = items.reduce((s, i) => s + i.quantity, 0);
+
   return (
     <div className="container cart">
-      <h1>Ваша корзина: {items.length} товара</h1>
+      <h1>Ваша корзина: {itemsQuantity} товара</h1>
       <div className="cart-wrapper">
         <div key={items.length} className="cart-items">
           {items.map((item) => (
@@ -85,26 +87,29 @@ const Cart = () => {
                 </div>
               </div>
               <button
-                  className="remove-btn"
-                  onClick={() => dispatch(removeCartItem(item.id))}
-                >
-                  <img src='/images/trash.svg' alt="" />
-                </button>
+                className="remove-btn"
+                onClick={() => dispatch(removeCartItem(item.id))}
+              >
+                <img src="/images/trash.svg" alt="" />
+              </button>
             </div>
           ))}
         </div>
 
         <div className="cart-total">
-          <h2>
-            Итого:
-            {items
-              .reduce(
-                (sum, item) => sum + parseFloat(item.price) * item.quantity,
-                0
-              )
-              .toFixed(2)}
-            руб.
-          </h2>
+          <div className="cart-total-text">
+            <h2>
+              Итого:
+              {items
+                .reduce(
+                  (sum, item) => sum + parseFloat(item.price) * item.quantity,
+                  0
+                )
+                .toFixed(2)}
+              руб.
+            </h2>
+            <p>{itemsQuantity} товара</p>
+          </div>
           <button className="cart-order-btn">Оформить заказ</button>
         </div>
       </div>

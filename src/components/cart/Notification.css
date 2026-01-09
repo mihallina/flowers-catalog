@@ -1,7 +1,6 @@
 .notification {
   position: fixed;
   top: 20px;
-  /* right: 20px; */
   left: 45%;
   background-color: #4caf50;
   color: white;
@@ -23,4 +22,28 @@
 .notification-hide {
   transform: translateY(-100%);
   opacity: 0;
+}
+
+@media(max-width: 645px){
+  .notification{
+    left: 36%;
+  }
+}
+
+@media(max-width: 426px){
+  .notification{
+    left: 30%;
+  }
+}
+
+@media(max-width: 376px){
+  .notification{
+    left: 20%;
+  }
+}
+
+@media(max-width: 321px){
+  .notification{
+    left: 10%;
+  }
 }
